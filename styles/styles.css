@@ -39,6 +39,7 @@ header {
     font-size: 50px;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .navigation-container .nav-bar li a {
@@ -674,6 +675,7 @@ button:hover {
     transform: scale(1.2);
 }
 
+/*galeria*/
 .button__gallery {
     height: 100%;
     display: flex;
@@ -796,6 +798,7 @@ button:hover {
 /*botones*/
 .card {
     margin: 35px;
+    width: 18rem;
 }
 
 .card-container {
@@ -1065,7 +1068,7 @@ footer {
         color: #f5fffa;
         width: 300px;
         justify-content: center;
-        margin-left: 320px;
+        margin-left: 260px;
 
     }
 
@@ -1117,7 +1120,7 @@ footer {
 
     .presentacion {
         height: 500px;
-        width: 860px;
+        width: 740px;
     }
 
     .presentacion .img {
@@ -1125,9 +1128,9 @@ footer {
     }
 
     .presentacion .img img {
-        border-radius: 5px;
-        width: 410px;
-        height: 290px;
+        border-radius: 0.5px;
+        width: 350px;
+        height: 250px;
         margin-left: 10px;
         padding: 5px;
         border: #e4e4e4 1px solid;
@@ -1184,8 +1187,8 @@ footer {
     .gallery-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 560px;
-        padding: 40px;
+        grid-auto-rows: 720px;
+        padding: 25px;
         grid-gap: 20px;
     }
 
@@ -1213,7 +1216,7 @@ footer {
 
     .services-options-container a {
         height: 30px;
-        width: 250px;
+        width: 200px;
         font-size: 25px;
     }
 
@@ -1224,10 +1227,10 @@ footer {
 
     .services-options .paisajes {
         font-size: 35px;
-        width: 850px;
+        width: 720px;
         height: 300px;
         float: none;
-        margin-left: 35px;
+        margin-left: 25px;
         transition: 0.5s;
     }
 
@@ -1237,10 +1240,10 @@ footer {
 
     .services-options .acrobacias {
         font-size: 35px;
-        width: 850px;
+        width: 720px;
         height: 300px;
         float: none;
-        margin-left: 35px;
+        margin-left: 25px;
         transition: 0.5s;
     }
 
@@ -1250,10 +1253,10 @@ footer {
 
     .services-options .animales {
         font-size: 35px;
-        width: 850px;
+        width: 720px;
         height: 300px;
         float: none;
-        margin-left: 35px;
+        margin-left: 25px;
         transition: 0.5s;
     }
 
@@ -1264,30 +1267,30 @@ footer {
     .decorative-picture {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 150px;
+        width: 50px;
     }
 
     .decorative-picture .service-one {
-        width: 420px;
-        height: 550px;
+        width: 350px;
+        height: 450px;
         margin-left: 0px;
     }
 
     .decorative-picture .service-two {
-        width: 420px;
-        height: 550px;
+        width: 350px;
+        height: 450px;
         margin-left: 0px;
     }
 
     .decorative-picture .service-three {
-        width: 420px;
-        height: 550px;
+        width: 350px;
+        height: 450px;
         margin-left: 0px;
     }
 
     .decorative-picture .service-four {
-        width: 420px;
-        height: 550px;
+        width: 350px;
+        height: 450px;
         margin-left: 0px;
     }
 
@@ -1384,6 +1387,123 @@ footer {
         margin-left: 210px;
         text-align: center;
         font-size: 20px;
+    }
+
+    /*galeria*/
+    .button__gallery {
+        height: 100%;
+        margin-top: 10px;
+        margin-left: 220px;
+        max-width: 350px;
+
+    }
+
+    .button__gallery a {
+        height: 50px;
+        width: 350px;
+        font-size: 15px;
+    }
+
+    .gallery-container-two {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px;
+        padding: 10px;
+        max-width: 100%;
+
+    }
+
+    .carousel-inner {
+        padding: 15px;
+        margin-right: 20px;
+    }
+
+    /*blog*/
+    .bar-container h2 {
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .bar-principal {
+        flex-direction: column;
+    }
+
+    .bar-principal select {
+        margin-left: -73px;
+        margin-top: 15px;
+        font-size: 21px;
+    }
+
+    .bar-principal form {
+        margin-left: 60px;
+        margin-top: 15px;
+    }
+
+    .bar-principal form p input {
+        margin-left: 105px;
+        margin-top: 15px;
+        width: 400px;
+    }
+
+    .card {
+        margin: 15px;
+        height: 700px;
+        width: 350px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .card-body p {
+        font-size: 15.5px;
+    }
+
+    .card img {
+        width: 350px;
+        height: 200px;
+    }
+
+    /*contacto*/
+    .contacto-container {
+        margin-left: 20px;
+    }
+
+    .contacto-container .subtitulo {
+        font-size: 35px;
+    }
+
+    .form-container {
+        width: 720px;
+        margin-right: 20px;
+    }
+
+    .write {
+        width: 720px;
+    }
+
+    .write iframe {
+        width: 700px;
+        height: 500px;
+    }
+
+
+    .subtitulo h2 {
+        font-size: 35px;
+    }
+
+    .col-lg-12 button {
+        font-size: 17px;
+        width: 150px;
+        height: 50px;
+    }
+
+    .img-container .img img {
+        width: 720px;
+        height: 720px;
+        margin-left: 0px;
+        padding: 15px;
     }
 
     /*footer gral - igual en todos las secciones*/
@@ -1435,7 +1555,7 @@ footer {
 }
 
 /* Index / Servicios  */
-@media (min-width: 541px) and (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 768px) {
 
     /*Header*/
     .navigation-container {
@@ -1445,16 +1565,21 @@ footer {
     }
 
     .navigation-container img {
-        width: 250px;
-        margin-left: 190px;
+        width: 150px;
+        margin-left: 150px;
+
+    }
+
+    .navigation-container .nav-bar {
+        padding: 0.5px;
+        margin-top: 10px;
 
     }
 
     .navigation-container .nav-bar li a {
-        font-size: 20px;
+        font-size: 12.5px;
         justify-content: center;
-        margin-top: 25px;
-        margin-right: 15px;
+
     }
 
     .navigation-container .nav-bar li a:hover {
@@ -1489,14 +1614,19 @@ footer {
         background-color: #6c8b93;
     }
 
-    .start-interaction p {
+    .start-interaction a {
         font-size: 12px;
-        font-weight: 170px;
+        font-weight: 120px;
+    }
+
+    .start-interaction a button {
+        width: 130px;
+        height: 40px;
     }
 
     .presentacion {
-        height: 450px;
-        width: 580px;
+        height: 350px;
+        width: 370px;
         flex-direction: column-reverse;
     }
 
@@ -1506,8 +1636,8 @@ footer {
 
     .presentacion .img img {
         border-radius: 5px;
-        width: 550px;
-        height: 350px;
+        width: 350px;
+        height: 250px;
         margin-left: 15px;
         padding: 5px;
         border: #e4e4e4 1px solid;
@@ -1547,7 +1677,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 400px;
-        padding: 40px;
+        padding: 20px;
         grid-gap: 20px;
     }
 
@@ -1575,8 +1705,9 @@ footer {
 
     .services-options-container a {
         height: 30px;
-        width: 250px;
-        font-size: 25px;
+        width: 150px;
+        font-size: 15px;
+
     }
 
     .services-options h5 {
@@ -1586,8 +1717,8 @@ footer {
 
     .services-options .paisajes {
         font-size: 25px;
-        width: 570px;
-        height: 300px;
+        width: 370px;
+        height: 200px;
         margin-left: 18px;
     }
 
@@ -1597,8 +1728,8 @@ footer {
 
     .services-options .acrobacias {
         font-size: 25px;
-        width: 570px;
-        height: 300px;
+        width: 370px;
+        height: 200px;
 
     }
 
@@ -1608,8 +1739,8 @@ footer {
 
     .services-options .animales {
         font-size: 25px;
-        width: 570px;
-        height: 300px;
+        width: 370px;
+        height: 200px;
 
     }
 
@@ -1620,30 +1751,39 @@ footer {
     .decorative-picture {
         flex-direction: column;
         width: 150px;
+
     }
 
     .decorative-picture .service-one {
-        width: 550px;
-        height: 500px;
-        margin-left: 5px;
+        width: 360px;
+        height: 450px;
+        margin-left: -15px;
+        border: 1.5px solid #f0f0f0ea;
+        padding: 5px;
     }
 
     .decorative-picture .service-two {
-        width: 550px;
-        height: 500px;
-        margin-left: 5px;
+        width: 360px;
+        height: 450px;
+        margin-left: -15px;
+        border: 1.5px solid #f0f0f0ea;
+        padding: 5px;
     }
 
     .decorative-picture .service-three {
-        width: 550px;
-        height: 500px;
-        margin-left: 5px;
+        width: 360px;
+        height: 450px;
+        margin-left: -15px;
+        border: 1.5px solid #f0f0f0ea;
+        padding: 5px;
     }
 
     .decorative-picture .service-four {
-        width: 550px;
-        height: 300px;
-        margin-left: 5px;
+        width: 360px;
+        height: 230px;
+        margin-left: -15px;
+        border: 1.5px solid #f0f0f0ea;
+        padding: 5px;
     }
 
     /*servicios*/
@@ -1664,7 +1804,7 @@ footer {
     .button__sections__lugares a {
         height: 30px;
         width: 150px;
-        margin-left: 100px;
+        margin-left: 10px;
         font-size: 15px;
     }
 
@@ -1686,7 +1826,7 @@ footer {
     .button__sections__arquitectura a {
         height: 30px;
         width: 150px;
-        margin-left: 100px;
+        margin-left: 10px;
         font-size: 15px;
     }
 
@@ -1708,7 +1848,7 @@ footer {
     .button__sections__acrobacias a {
         height: 30px;
         width: 150px;
-        margin-left: 100px;
+        margin-left: 10px;
         font-size: 15px;
     }
 
@@ -1729,9 +1869,136 @@ footer {
     .button__sections__animales a {
         height: 30px;
         width: 150px;
-        margin-left: 100px;
+        margin-left: 10px;
         font-size: 15px;
     }
+
+        /*galeria*/
+        .button__gallery {
+            height: 100%;
+            margin-top: 10px;
+            margin-left: 20px;
+            max-width: 350px;
+    
+        }
+    
+        .button__gallery a {
+            height: 50px;
+            width: 300px;
+            font-size: 10px;
+        }
+    
+        .gallery-container-two {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 200px;
+            padding: 0.5px;
+            max-width: 100%;
+            margin-left: 5px;
+    
+        }
+    
+        .carousel-inner {
+            padding: 15px;
+            margin-right: 20px;
+        }
+    
+        /*blog*/
+        .bar-container h2 {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+    
+        .bar-principal {
+            flex-direction: column;
+        }
+    
+        .bar-principal select {
+            margin-left: -3px;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+    
+        .bar-principal form {
+            margin-left: 0px;
+            margin-top: 5px;
+        }
+    
+        .bar-principal form p input {
+            margin-left: 5px;
+            margin-top: 5px;
+            width: 385px;
+        }
+    
+        .card {
+            margin: 15px;
+            height: 650px;
+            width: 350px;
+        }
+    
+        .card-container {
+            grid-template-columns: repeat(1, 1fr);
+    
+        }
+    
+        .card-body p {
+            font-size: 15px;
+        }
+    
+        .card img {
+            width: 350px;
+            height: 200px;
+        }
+    
+        /*contacto*/
+        .contacto-container {
+            margin-left: 0px;
+        }
+    
+        .contacto-container .subtitulo {
+            font-size: 25px;
+        }
+    
+        .form-container {
+            width: 370px;
+            margin-right: 0.5px;
+        }
+
+        .form-case {
+            font-size: 15px;
+        }
+    
+        .write {
+            width: 370px;
+        }
+
+        .write p {
+            font-size: 15px;
+        }
+    
+    
+        .write iframe {
+            width: 300px;
+            height: 200px;
+        }
+    
+    
+        .subtitulo h2 {
+            font-size: 20px;
+        }
+    
+        .col-lg-12 button {
+            font-size: 15px;
+            width: 100px;
+            height: 50px;
+        }
+    
+        .img-container .img img {
+            width: 370px;
+            height: 370px;
+            margin-left: -15px;
+            padding: 5px;
+        }
 
     /*footer gral - igual en todos las secciones*/
     footer {
@@ -1759,7 +2026,7 @@ footer {
     }
 
     .navigation-end img {
-        background-color:  #6c8b93;
+        background-color: #6c8b93;
         width: 150px;
         margin-top: 25px;
     }
