@@ -1,0 +1,109 @@
+/*HEADER / Nav-bar - igual en todas las secciones*/
+header {
+    grid-area: header;
+    width: 100%;
+
+}
+
+.navigation-container {
+    background-color: $color-fondo;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.navigation-container img {
+    display: flex;
+    color: $color-principal;
+    width: 500px;
+    margin-left: px;
+}
+
+.navigation-container .nav-bar {
+    display: flex;
+    list-style: $decoracion;
+    text-decoration: $decoracion;
+    flex-direction: $direccion-secundaria;
+    font-size: 50px;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.navigation-container .nav-bar li a {
+    justify-content: space-between;
+}
+
+.navigation-container .nav-bar li a {
+    color: $color-principal;
+    text-decoration: $decoracion;
+    list-style: $decoracion;
+    font-size: 40px;
+    width: fit-content;
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+
+.navigation-container .nav-bar li a:hover {
+    background-color: $color-secundario;
+    color: $color-hover;
+}
+
+
+.logotype {
+    display: flex;
+    flex-direction: $direccion-principal;
+    justify-content: $posicion;
+    align-items: $posicion;
+    background-image: url(../images/background-image2.png);
+    background-size: cover;
+    background-position: $posicion;
+
+
+}
+
+.logotype img {
+    width: 250px;
+
+}
+
+.logotype a {
+    color: $color-principal;
+    text-decoration: $decoracion;
+}
+
+.logotype a i {
+    color: $color-principal;
+    text-decoration: $decoracion;
+    margin-top: 40px;
+    font-size: 54px;
+}
+
+h1 {
+    display: flex;
+    font-family: $titulo-principal;
+    color: $color-secundario;
+    font-style: italic;
+    font-size: 54px;
+    margin-top: 40px;
+    align-content: $posicion;
+    justify-content: $posicion;
+}
+
+h2 {
+    display: flex;
+    font-family: $cuerpo;
+    color: $color-secundario;
+    font-style: normal;
+    font-size: 35px;
+    margin-top: 10px;
+    align-content: $posicion;
+    justify-content: $posicion;
+}

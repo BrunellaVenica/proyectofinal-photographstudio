@@ -1,0 +1,21 @@
+//reset
+@import './reset/variables';
+@import './reset/setting';
+
+//header 
+@import 'header';
+
+//main
+@import 'bodyindex';
+@import 'bodyservices';
+@import 'bodygallery';
+@import 'bodyblog';
+@import 'bodycontact';
+
+//footer
+@import 'footer';
+
+//medias querys
+@import './formatos/mqtablet';
+@import './formatos/mqtelefono';
+

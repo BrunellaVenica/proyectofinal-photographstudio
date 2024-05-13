@@ -1,0 +1,91 @@
+/*blog*/
+.articles p {
+    color: $color-principal;
+    font-family: $cuerpo;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.bar-container {
+    display: flex;
+    flex-direction: $direccion-principal;
+
+}
+
+.bar-container h2 {
+    color: $color-principal;
+    font-size: 40px;
+    font-family: $cuerpo;
+    font-style: italic;
+    margin-top: 15px;
+    align-items: $posicion;
+}
+
+.bar-principal {
+    display: flex;
+    flex-direction: $direccion-secundaria;
+    align-items: $posicion;
+}
+
+.bar-principal select {
+    display: flex;
+    flex-direction: $direccion-secundaria;
+    margin-left: 70px;
+}
+
+.bar-principal form {
+    display: flex;
+    flex-direction: $direccion-secundaria;
+    margin-left: 1300px;
+}
+
+/*botones*/
+.card {
+    margin: 35px;
+    width: 18rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: $posicion;
+    justify-items: $posicion;
+}
+
+.card-body p {
+    text-align: justify;
+}
+
+.feeds {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.feeds .feed i {
+    margin-left: 30px;
+    color: $btn-hover;
+}
+
+.feeds .feed i:hover {
+    background: $color-fondo;
+    color: $color-hover;
+}
+
+.feeds .feed i:visited {
+    background: $color-principal;
+    background-color: $color-fondo;
+    color: $color-hover;
+
+}
+
+.buscador i {
+    list-style: $decoracion;
+    color: $color-principal;
+}
+
+.articles p {
+    font-family: $cuerpo;
+    color: $color-principal;
+    font-style: italic;
+    font-size: 16px;
+}
