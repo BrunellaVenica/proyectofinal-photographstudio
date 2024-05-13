@@ -989,7 +989,7 @@ footer {
 @media (min-width: 769px) and (max-width: 1200px) {
   /*Header*/
   .navigation-container {
-    background-color: #a39a88;
+    background-color: #787673;
     background-size: cover;
     flex-direction: column;
   }
@@ -1006,8 +1006,8 @@ footer {
     margin-right: 15px;
   }
   .navigation-container .nav-bar li a:hover {
-    background-color: #e4e4e4;
-    color: #7eafb0;
+    background-color: #f5fffa;
+    color: #79aab5;
   }
   .logotype img {
     width: 150px;
@@ -1050,14 +1050,14 @@ footer {
     height: 250px;
     margin-left: 10px;
     padding: 5px;
-    border: #e4e4e4 1px solid;
+    border: #f5fffa 1px solid;
     margin-top: 0px;
     margin-bottom: 95px;
   }
   .producto-info {
     width: 50%;
     border-radius: 0px 7px 10px 7px;
-    background: #fff;
+    background: #f5fffa;
     background-color: #a39a88;
   }
   .producto-texto {
@@ -1184,7 +1184,7 @@ footer {
   .button__sections__lugares {
     background-size: 900px 370px;
     text-align: center;
-    color: #e4e4e4;
+    color: #f5fffa;
     padding: 130px;
     margin-top: 5px;
   }
@@ -1203,7 +1203,7 @@ footer {
   .button__sections__arquitectura {
     background-size: 900px 370px;
     text-align: center;
-    color: #e4e4e4;
+    color: #f5fffa;
     padding: 130px;
     margin-top: 5px;
   }
@@ -1222,7 +1222,7 @@ footer {
   .button__sections__acrobacias {
     background-size: 900px 370px;
     text-align: center;
-    color: #e4e4e4;
+    color: #f5fffa;
     padding: 130px;
     margin-top: 5px;
   }
@@ -1241,7 +1241,7 @@ footer {
   .button__sections__animales {
     background-size: 900px 370px;
     text-align: center;
-    color: #e4e4e4;
+    color: #f5fffa;
     padding: 130px;
     margin-top: 5px;
   }
@@ -1381,13 +1381,13 @@ footer {
   }
   .copyright p {
     display: flex;
-    color: #ffffff;
+    color: #f5fffa;
     margin-top: 160px;
     font-size: 30px;
   }
 }
 /* Index / Servicios  */
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 401px) and (max-width: 768px) {
   /*Header*/
   .navigation-container {
     background-color: #6c8b93;
@@ -1406,8 +1406,8 @@ footer {
     justify-content: center;
   }
   .navigation-container .nav-bar li a:hover {
-    background-color: #e4e4e4;
-    color: #626a6b;
+    background-color: #f5fffa;
+    color: #6c8b93;
   }
   .logotype img {
     width: 100px;
@@ -1452,14 +1452,14 @@ footer {
     height: 250px;
     margin-left: 15px;
     padding: 5px;
-    border: #e4e4e4 1px solid;
+    border: #f5fffa 1px solid;
     margin-top: 0px;
     margin-bottom: 5px;
   }
   .producto-info {
     width: 50%;
     border-radius: 0px 7px 10px 7px;
-    background: #fff;
+    background: #f5fffa;
     background-color: #6c8b93;
   }
   .producto-texto {
@@ -1542,35 +1542,35 @@ footer {
     width: 360px;
     height: 450px;
     margin-left: -15px;
-    border: 1.5px solid rgba(240, 240, 240, 0.9176470588);
+    border: 1.5px solid #f5fffa;
     padding: 5px;
   }
   .decorative-picture .service-two {
     width: 360px;
     height: 450px;
     margin-left: -15px;
-    border: 1.5px solid rgba(240, 240, 240, 0.9176470588);
+    border: 1.5px solid #f5fffa;
     padding: 5px;
   }
   .decorative-picture .service-three {
     width: 360px;
     height: 450px;
     margin-left: -15px;
-    border: 1.5px solid rgba(240, 240, 240, 0.9176470588);
+    border: 1.5px solid #f5fffa;
     padding: 5px;
   }
   .decorative-picture .service-four {
     width: 360px;
     height: 230px;
     margin-left: -15px;
-    border: 1.5px solid rgba(240, 240, 240, 0.9176470588);
+    border: 1.5px solid #f5fffa;
     padding: 5px;
   }
   /*servicios*/
   .button__sections__lugares {
     background-size: 860px 350px;
     text-align: center;
-    color: #e4e4e4;
+    color: #f5fffa;
     padding: 130px;
     margin-top: 0px;
   }
@@ -1587,7 +1587,7 @@ footer {
   .button__sections__arquitectura {
     background-size: 860px 350px;
     text-align: center;
-    color: #e4e4e4;
+    color: #f5fffa;
     padding: 130px;
     margin-top: 0px;
   }
@@ -1604,7 +1604,7 @@ footer {
   .button__sections__acrobacias {
     background-size: 860px 350px;
     text-align: center;
-    color: #e4e4e4;
+    color: #f5fffa;
     padding: 130px;
     margin-top: 0px;
   }
@@ -1621,7 +1621,7 @@ footer {
   .button__sections__animales {
     background-size: 860px 350px;
     text-align: center;
-    color: #e4e4e4;
+    color: #f5fffa;
     padding: 130px;
     margin-top: 0px;
   }
@@ -1766,7 +1766,7 @@ footer {
   }
   .copyright p {
     display: flex;
-    color: #ffffff;
+    color: #f5fffa;
     margin-top: 160px;
     font-size: 15px;
   }

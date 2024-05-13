@@ -1,10 +1,10 @@
 /* Index / Servicios  */
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 401px) and (max-width: 768px) {
 
     /*Header*/
     .navigation-container {
-        background-color: #6c8b93;
-        flex-direction: column;
+        background-color: $fondo-mq-telefono;
+        flex-direction: $direccion-principal;
 
     }
 
@@ -22,13 +22,13 @@
 
     .navigation-container .nav-bar li a {
         font-size: 12.5px;
-        justify-content: center;
+        justify-content: $posicion;
 
     }
 
     .navigation-container .nav-bar li a:hover {
-        background-color: #e4e4e4;
-        color: #626a6b;
+        background-color: $color-principal;
+        color: $fondo-mq-telefono;
     }
 
     .logotype img {
@@ -43,8 +43,8 @@
     h1 {
         font-size: 24px;
         margin-top: 30px;
-        align-content: center;
-        justify-content: center;
+        align-content: $posicion;
+        justify-content: $posicion;
         margin-left: 20px;
     }
 
@@ -55,7 +55,7 @@
 
     /*MainIndex*/
     main {
-        background-color: #6c8b93;
+        background-color: $fondo-mq-telefono;
     }
 
     .start-interaction a {
@@ -84,7 +84,7 @@
         height: 250px;
         margin-left: 15px;
         padding: 5px;
-        border: #e4e4e4 1px solid;
+        border: $color-principal 1px solid;
         margin-top: 0px;
         margin-bottom: 5px;
     }
@@ -92,8 +92,8 @@
     .producto-info {
         width: 50%;
         border-radius: 0px 7px 10px 7px;
-        background: #fff;
-        background-color: #6c8b93;
+        background: $color-principal;
+        background-color: $fondo-mq-telefono;
     }
 
     .producto-texto {
@@ -104,7 +104,7 @@
         margin-left: 30px;
         padding-top: 0px;
         font-size: 20px;
-        align-items: center;
+        align-items: $posicion;
     }
 
 
@@ -193,7 +193,7 @@
     }
 
     .decorative-picture {
-        flex-direction: column;
+        flex-direction: $direccion-principal;
         width: 150px;
 
     }
@@ -202,7 +202,7 @@
         width: 360px;
         height: 450px;
         margin-left: -15px;
-        border: 1.5px solid #f0f0f0ea;
+        border: 1.5px solid $color-principal;
         padding: 5px;
     }
 
@@ -210,7 +210,7 @@
         width: 360px;
         height: 450px;
         margin-left: -15px;
-        border: 1.5px solid #f0f0f0ea;
+        border: 1.5px solid $color-principal;
         padding: 5px;
     }
 
@@ -218,7 +218,7 @@
         width: 360px;
         height: 450px;
         margin-left: -15px;
-        border: 1.5px solid #f0f0f0ea;
+        border: 1.5px solid $color-principal;
         padding: 5px;
     }
 
@@ -226,22 +226,22 @@
         width: 360px;
         height: 230px;
         margin-left: -15px;
-        border: 1.5px solid #f0f0f0ea;
+        border: 1.5px solid $color-principal;
         padding: 5px;
     }
 
     /*servicios*/
     .button__sections__lugares {
         background-size: 860px 350px;
-        text-align: center;
-        color: #e4e4e4;
+        text-align: $posicion;
+        color: $color-principal;
         padding: 130px;
         margin-top: 0px;
     }
 
     .button__sections__lugares p {
         font-size: 25px;
-        text-align: center;
+        text-align: $posicion;
     }
 
 
@@ -255,15 +255,15 @@
 
     .button__sections__arquitectura {
         background-size: 860px 350px;
-        text-align: center;
-        color: #e4e4e4;
+        text-align: $posicion;
+        color: $color-principal;
         padding: 130px;
         margin-top: 0px;
     }
 
     .button__sections__arquitectura p {
         font-size: 25px;
-        text-align: center;
+        text-align: $posicion;
     }
 
 
@@ -277,15 +277,15 @@
 
     .button__sections__acrobacias {
         background-size: 860px 350px;
-        text-align: center;
-        color: #e4e4e4;
+        text-align: $posicion;
+        color: $color-principal;
         padding: 130px;
         margin-top: 0px;
     }
 
     .button__sections__acrobacias p {
         font-size: 25px;
-        text-align: center;
+        text-align: $posicion;
     }
 
 
@@ -298,15 +298,15 @@
 
     .button__sections__animales {
         background-size: 860px 350px;
-        text-align: center;
-        color: #e4e4e4;
+        text-align: $posicion;
+        color: $color-principal;
         padding: 130px;
         margin-top: 0px;
     }
 
     .button__sections__animales p {
         font-size: 25px;
-        text-align: center;
+        text-align: $posicion;
     }
 
 
@@ -354,7 +354,7 @@
         }
     
         .bar-principal {
-            flex-direction: column;
+            flex-direction: $direccion-principal;
         }
     
         .bar-principal select {
@@ -446,7 +446,7 @@
 
     /*footer gral - igual en todos las secciones*/
     footer {
-        background-color: #6c8b93;
+        background-color:$fondo-mq-telefono;
         font-size: 150px;
         margin-top: 8px;
     }
@@ -460,7 +460,7 @@
     }
 
     .fa-brands .fa-linkedin-in {
-        justify-content: center;
+        justify-content: $posicion;
 
     }
 
@@ -470,7 +470,7 @@
     }
 
     .navigation-end img {
-        background-color: #6c8b93;
+        background-color: $fondo-mq-telefono;
         width: 150px;
         margin-top: 25px;
     }
@@ -485,7 +485,7 @@
 
     .copyright p {
         display: flex;
-        color: #ffffff;
+        color: $color-principal;
         margin-top: 160px;
         font-size: 15px;
     }

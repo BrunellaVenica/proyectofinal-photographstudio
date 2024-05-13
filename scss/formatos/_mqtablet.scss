@@ -3,30 +3,30 @@
 
     /*Header*/
     .navigation-container {
-        background-color: #a39a88;
+        background-color: $btn-hover;
         background-size: cover;
-        flex-direction: column;
+        flex-direction: $direccion-principal;
 
     }
 
     .navigation-container img {
-        color: #f5fffa;
+        color: $color-principal;
         width: 300px;
-        justify-content: center;
+        justify-content:  $posicion;
         margin-left: 260px;
 
     }
 
     .navigation-container .nav-bar li a {
         font-size: 20px;
-        justify-content: center;
+        justify-content: $posicion;
         margin-top: 25px;
         margin-right: 15px;
     }
 
     .navigation-container .nav-bar li a:hover {
-        background-color: #e4e4e4;
-        color: #7eafb0;
+        background-color: $color-principal;
+        color: $color-hover;
     }
 
     .logotype img {
@@ -41,21 +41,21 @@
     h1 {
         font-size: 30px;
         margin-top: 30px;
-        align-content: center;
-        justify-content: center;
+        align-content: $posicion;
+        justify-content: $posicion;
         margin-left: 20px;
     }
 
     h2 {
         font-size: 21px;
         margin-top: 10px;
-        align-content: center;
-        justify-content: center;
+        align-content: $posicion;
+        justify-content: $posicion;
     }
 
     /*MainIndex*/
     main {
-        background-color: #a39a88;
+        background-color: $fondo-mq-tablet;
     }
 
     .start-interaction p {
@@ -78,7 +78,7 @@
         height: 250px;
         margin-left: 10px;
         padding: 5px;
-        border: #e4e4e4 1px solid;
+        border: $color-principal 1px solid;
         margin-top: 0px;
         margin-bottom: 95px;
     }
@@ -86,8 +86,8 @@
     .producto-info {
         width: 50%;
         border-radius: 0px 7px 10px 7px;
-        background: #fff;
-        background-color: #a39a88;
+        background: $color-principal;
+        background-color: $fondo-mq-tablet;
     }
 
     .producto-texto {
@@ -98,7 +98,7 @@
         margin-left: 20px;
         padding-top: 6px;
         font-size: 21px;
-        align-items: center;
+        align-items: $posicion;
     }
 
 
@@ -242,15 +242,15 @@
     /*servicios*/
     .button__sections__lugares {
         background-size: 900px 370px;
-        text-align: center;
-        color: #e4e4e4;
+        text-align: $posicion;
+        color: $color-principal;
         padding: 130px;
         margin-top: 5px;
     }
 
     .button__sections__lugares p {
         font-size: 30px;
-        text-align: center;
+        text-align: $posicion;
     }
 
 
@@ -259,22 +259,22 @@
         width: 200px;
         margin-top: 0px;
         margin-left: 210px;
-        text-align: center;
+        text-align: $posicion;
         font-size: 20px;
     }
 
 
     .button__sections__arquitectura {
         background-size: 900px 370px;
-        text-align: center;
-        color: #e4e4e4;
+        text-align: $posicion;
+        color: $color-principal;
         padding: 130px;
         margin-top: 5px;
     }
 
     .button__sections__arquitectura p {
         font-size: 30px;
-        text-align: center;
+        text-align: $posicion;
     }
 
 
@@ -283,22 +283,22 @@
         width: 200px;
         margin-top: 0px;
         margin-left: 210px;
-        text-align: center;
+        text-align: $posicion;
         font-size: 20px;
     }
 
 
     .button__sections__acrobacias {
         background-size: 900px 370px;
-        text-align: center;
-        color: #e4e4e4;
+        text-align: $posicion;
+        color: $color-principal;
         padding: 130px;
         margin-top: 5px;
     }
 
     .button__sections__acrobacias p {
         font-size: 30px;
-        text-align: center;
+        text-align: $posicion;
     }
 
 
@@ -307,21 +307,21 @@
         width: 200px;
         margin-top: 0px;
         margin-left: 210px;
-        text-align: center;
+        text-align: $posicion;
         font-size: 20px;
     }
 
     .button__sections__animales {
         background-size: 900px 370px;
-        text-align: center;
-        color: #e4e4e4;
+        text-align: $posicion;
+        color: $color-principal;
         padding: 130px;
         margin-top: 5px;
     }
 
     .button__sections__animales p {
         font-size: 30px;
-        text-align: center;
+        text-align: $posicion;
     }
 
 
@@ -330,7 +330,7 @@
         width: 200px;
         margin-top: 0px;
         margin-left: 210px;
-        text-align: center;
+        text-align: $posicion;
         font-size: 20px;
     }
 
@@ -370,7 +370,7 @@
     }
 
     .bar-principal {
-        flex-direction: column;
+        flex-direction: $direccion-principal;
     }
 
     .bar-principal select {
@@ -453,7 +453,7 @@
 
     /*footer gral - igual en todos las secciones*/
     footer {
-        background-color: #a39a88;
+        background-color: $fondo-mq-tablet;
         font-size: 200px;
         margin-top: 8px;
     }
@@ -467,7 +467,7 @@
     }
 
     .fa-brands .fa-linkedin-in {
-        justify-content: center;
+        justify-content: $posicion;
 
     }
 
@@ -477,7 +477,7 @@
     }
 
     .navigation-end img {
-        background-color: #a39a88;
+        background-color: $fondo-mq-tablet;
         width: 200px;
         margin-top: 25px;
     }
@@ -492,7 +492,7 @@
 
     .copyright p {
         display: flex;
-        color: #ffffff;
+        color: $color-principal;
         margin-top: 160px;
         font-size: 30px;
     }
