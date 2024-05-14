@@ -1,34 +1,36 @@
 /*HEADER / Nav-bar - igual en todas las secciones*/
 header {
-    grid-area: header;
-    width: 100%;
-
+    @include espacios (100%, none);
 }
 
 .navigation-container {
-    background-color: $color-fondo;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-image: linear-gradient(to bottom, rgb(134, 119, 96), $color-fondo);
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-    margin-bottom: 5px;
-    font-size: 35px;
+    font-size: map-get($fuentes, 40px);
+    @include margenes (none, 5px, none, none, 30px);
 }
 
 .navigation-container img {
     display: flex;
     color: $color-principal;
     width: 500px;
-    margin-left: px;
+    margin-left: 10px;
 }
+
+.scale-up-left {
+	-webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
 
 .navigation-container .nav-bar {
     display: flex;
     list-style: $decoracion;
     text-decoration: $decoracion;
     flex-direction: $direccion-secundaria;
-    font-size: 50px;
+    font-size: map-get($fuentes, 50px);
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
@@ -42,20 +44,17 @@ header {
     color: $color-principal;
     text-decoration: $decoracion;
     list-style: $decoracion;
-    font-size: 40px;
+    font-size: map-get($fuentes, 50px);
     width: fit-content;
     display: flex;
     justify-content: end;
-    margin-top: 5px;
-    margin-left: 15px;
-    margin-right: 25px;
+    @include margenes (5px, none, 15px, 25px, none);
 }
 
 .navigation-container .nav-bar li a:hover {
     background-color: $color-secundario;
     color: $color-hover;
 }
-
 
 .logotype {
     display: flex;
@@ -65,13 +64,10 @@ header {
     background-image: url(../images/background-image2.png);
     background-size: cover;
     background-position: $posicion;
-
-
 }
 
 .logotype img {
-    width: 250px;
-
+    @include espacios (250px, none);
 }
 
 .logotype a {
@@ -82,8 +78,8 @@ header {
 .logotype a i {
     color: $color-principal;
     text-decoration: $decoracion;
-    margin-top: 40px;
-    font-size: 54px;
+    @include margenes (40px, none, none, none, none);
+    font-size: map-get($fuentes, 50px);
 }
 
 h1 {
@@ -91,8 +87,8 @@ h1 {
     font-family: $titulo-principal;
     color: $color-secundario;
     font-style: italic;
-    font-size: 54px;
-    margin-top: 40px;
+    font-size: map-get($fuentes, 50px);
+    @include margenes (40px, none, none, none, none);
     align-content: $posicion;
     justify-content: $posicion;
 }
@@ -102,8 +98,8 @@ h2 {
     font-family: $cuerpo;
     color: $color-secundario;
     font-style: normal;
-    font-size: 35px;
-    margin-top: 10px;
+    font-size: map-get($fuentes, 40px);
+    @include margenes (10px, none, none, none, none);
     align-content: $posicion;
     justify-content: $posicion;
 }

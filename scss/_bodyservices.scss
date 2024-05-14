@@ -4,170 +4,106 @@
         &__lugares {
             background-image: url(../images/portada-lugares.jpg);
             background-position: $posicion $posicion;
-            background-repeat: no-repeat;
-            background-size: cover;
             text-align: $posicion;
             color: $color-secundario;
-            padding: 450px;
-            margin-top: 10px;
-            transition: 1s;
+            @include setting-img;
             p {
-                color: $color-secundario;
-                font-size: 80px;
-                font-family: $cuerpo;
-                font-style: italic;
+                @include secciones-texto;
             }
             a {
-                height: 50px;
-                width: 350px;
-                border-radius: 60px;
+                @include formato;
+                @include espacios (350px, 50px);
+                @include margenes (none, none, 500px, none, none);
                 font-family: $cuerpo;
-                font-style: normal;
-                text-transform: uppercase;
-                letter-spacing: 3.5px;
                 text-align: $posicion;
-                line-height: 25px;
-                cursor: pointer;
                 text-decoration: $decoracion;
                 background-color: $color-principal;
                 border: 2px solid $color-principal;
-                margin-top: 20px;
-                display: flex;
                 justify-content: $posicion;
                 align-items: $posicion;
-                margin-left: 500px;
+                display: flex;
             }
             a:hover {
-                background: $color-principal;
-                color: $color-hover;
-                transform: scale(1.2);
+                @include animacion-img;
             }
         }
         &__arquitectura {
             background-image: url(../images/portada-arquitectura.jpg);
             background-position: $posicion $posicion;
-            background-repeat: no-repeat;
-            background-size: cover;
             text-align: $posicion;
             color: $color-principal;
-            padding: 450px;
-            margin-top: 50px;
-            transition: 1s;
+            @include setting-img;
             p {
-                color: $posicion;
-                font-size: 80px;
-                font-family: $cuerpo;
-                font-style: italic;
+                @include secciones-texto;
             }
             a {
-                height: 50px;
-                width: 350px;
-                border-radius: 60px;
+                @include formato;
+                @include espacios (350px, 50px);
+                @include margenes (none, none, 500px, none, none);
                 font-family: $cuerpo;
-                font-style: normal;
-                text-transform: uppercase;
-                letter-spacing: 3.5px;
                 text-align: $posicion;
-                line-height: 25px;
-                cursor: pointer;
                 text-decoration: $decoracion;
                 background-color: $color-principal;
                 border: 2px solid $color-principal;
-                margin-top: 20px;
-                display: flex;
                 justify-content: $posicion;
                 align-items: $posicion;
-                margin-left: 500px;
+                display: flex;
             }
             a:hover {
-                background: $color-principal;
-                color: $color-hover;
-                transform: scale(1.2);
-            }
-            
+                @include animacion-img;
+            } 
         }
-        &____acrobacias {
+        &__acrobacias {
             background-image: url(../images/portada-acro.jpg);
             background-position: $posicion $posicion;
-            background-repeat: no-repeat;
-            background-size: cover;
             text-align: $posicion;
             color: $color-principal;
-            padding: 450px;
-            margin-top: 50px;
-            transition: 1s;
+            @include setting-img;
             p {
-                color: $color-principal;
-                font-size: 80px;
-                font-family: $cuerpo;
-                font-style: italic;
+                @include secciones-texto;
             }
             a {
-                height: 50px;
-                width: 350px;
-                border-radius: 60px;
+                @include formato;
+                @include espacios (350px, 50px);
+                @include margenes (none, none, 500px, none, none);
                 font-family: $cuerpo;
-                font-style: normal;
-                text-transform: uppercase;
-                letter-spacing: 3.5px;
                 text-align: $posicion;
-                line-height: 25px;
-                cursor: pointer;
                 text-decoration: $decoracion;
                 background-color: $color-principal;
                 border: 2px solid $color-principal;
-                margin-top: 20px;
-                display: flex;
                 justify-content: $posicion;
                 align-items: $posicion;
-                margin-left: 500px;
+                display: flex;
+                
             }
             a:hover {
-                background: $color-principal;
-                color: $color-hover;
-                transform: scale(1.2);
+                @include animacion-img;
             }
         }
-        &____animales {
+        &__animales {
             background-image: url(../images/portada-animales.jpg);
             background-position: $posicion $posicion;
-            background-repeat: no-repeat;
-            background-size: cover;
             text-align: $posicion;
             color: $color-principal;
-            padding: 450px;
-            margin-top: 50px;
-            transition: 1s;
+            @include setting-img;
             p {
-                color: $color-principal;
-                font-size: 80px;
-                font-family: $cuerpo;
-                font-style: italic;
+                @include secciones-texto;
             }
             a {
-                height: 50px;
-                width: 350px;
-                border-radius: 60px;
+                @include formato;
+                @include espacios (350px, 50px);
+                @include margenes (none, none, 500px, none, none);
                 font-family: $cuerpo;
-                font-style: normal;
-                text-transform: uppercase;
-                letter-spacing: 3.5px;
                 text-align: $posicion;
-                line-height: 25px;
-                cursor: pointer;
                 text-decoration: $decoracion;
                 background-color: $color-principal;
                 border: 2px solid $color-principal;
-                margin-top: 20px;
-                display: flex;
                 justify-content: $posicion;
                 align-items: $posicion;
-                margin-left: 500px;
+                display: flex;
             }
             a:hover {
-                background: $color-principal;
-                color: $color-hover;
-                transform: scale(1.2);
+                @include animacion-img;
             }            
         }
     }

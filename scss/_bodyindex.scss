@@ -1,7 +1,7 @@
 /*body-index*/
 main {
-    background-color:$color-fondo;
-    margin-top: 10px;
+    background-image: linear-gradient(to bottom, rgb(134, 119, 96), $color-fondo);
+    @include margenes (10px, none, none, none, none);
 }
 
 
@@ -17,8 +17,7 @@ main {
     justify-content: $posicion;
     align-items: $posicion;
     text-decoration: $decoracion;
-    margin-top: 5px;
-    margin-bottom: 55px;
+    @include margenes (5px, 55px, none, none, none);
 }
 
 .start-interaction p {
@@ -30,55 +29,43 @@ main {
 }
 
 .start-interaction img {
-    width: 50%;
+    @include espacios (50%, none);
 }
 
 .presentacion {
-    height: 700px;
-    width: 2950px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    box-sizing: border-box;
+    @include espacios (2950px, 700px);
+    @include presentacion;
+    background-color: $color-fondo;
 }
 
 .presentacion .img {
     width: 50%;
     align-content: $posicion;
-
 }
 
 .presentacion .img img {
     vertical-align: top;
     border-radius: 5px;
-    width: 1200px;
-    height: 600px;
-    margin: 15px;
-    padding: 15px;
+    @include espacios (1200px, 600px);
+    @include margenes (15px, 15px, 200px, 15px, 15px);
     border: $color-principal 2px solid;
-    margin-left: 200px;
 }
 
 .producto-info {
-    width: 50%;
+    @include espacios (50%, none);
     border-radius: 0px 7px 10px 7px;
     background: $color-principal;
     background-color: $color-fondo;
 }
 
 .producto-texto {
-    width: 100%;
+    @include espacios (100%, none);
 }
 
 .producto-texto h1 {
-    margin-left: 130px;
-    padding-top: 52px;
+    @include margenes (5px, none, 130px, none, 52px);
     font-size: 60px;
     color: $color-principal;
-    margin-top: 5px;
 }
 
 .producto-texto h1,
@@ -87,43 +74,35 @@ main {
 }
 
 .producto-texto p {
-    margin-left: 38px;
     font-size: 35px;
     font-family: $cuerpo;
     color: $color-principal;
     letter-spacing: 1.5px;
-    height: 125px;
-    margin-top: 15px;
+    @include espacios (none, 125px);
     text-align: justify;
-    margin-left: 150px;
-
+    @include margenes (15px, none, 38px, none, none);
 }
 
 .precio-btn {
-    height: 200px;
+    @include espacios (none, 200px);
     display: flex;
     justify-content: $posicion;
-    margin-top: 320px;
-    margin-left: 150px;
+    @include margenes (320px, none, 150px, none, none);
+    text-align: $posicion;
 
 }
 
 .precio-btn a {
-    height: 50px;
-    width: 156px;
-    border-radius: 60px;
+    @include formato;
+    @include espacios (350px, 50px);
+    @include margenes (-10px, none, none, none, none);
     font-family: $cuerpo;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
     text-align: $cuerpo;
-    line-height: 25px;
-    cursor: pointer;
-    text-decoration: none;
     background-color: $color-principal;
     border: 2px solid $color-principal;
-    align-content: center;
+    align-content: $posicion;
     color: $btn-hover;
+    text-decoration: $decoracion;
 }
 
 .precio-btn a:hover {
@@ -132,21 +111,14 @@ main {
 }
 
 button {
-    height: 50px;
-    width: 250px;
-    border-radius: 60px;
+    @include formato;
+    @include espacios (350px, 50px);
     font-family: $cuerpo;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
     text-align: $posicion;
-    line-height: 25px;
-    cursor: pointer;
     text-decoration: $decoracion;
     background-color: $color-principal;
     border: 2px solid $color-principal;
     align-content: $posicion;
-    margin-top: 50px;
     color: $btn-hover;
 }
 
@@ -157,32 +129,25 @@ button:hover {
 
 
 .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1500px;
-    padding: 40px;
-    grid-gap: 20px;
+    @include formato-grid;
+    margin-left: 20px;
 }
 
 .gallery__img {
-    width: 100%;
-    height: 100%;
+    @include espacios (100%, 100%);
     object-fit: cover;
 }
 
 .gallery__item:nth-child(1) {
-    grid-column-start: span 2;
-    grid-row-start: span 1;
+    @include grilla-galeria;
 }
 
 .gallery__item:nth-child(4) {
-    grid-column-start: span 2;
-    grid-row-start: span 1;
+    @include grilla-galeria;
 }
 
 .gallery__item:nth-child(5) {
-    grid-column-start: span 2;
-    grid-row-start: span 1;
+    @include grilla-galeria;
 }
 
 .services-options-container {
@@ -194,21 +159,14 @@ button:hover {
 }
 
 .services-options-container a {
-    height: 50px;
-    width: 350px;
-    border-radius: 60px;
+    @include formato;
+    @include espacios (350px, 50px);
     font-family: $cuerpo;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 3.5px;
     text-align: $posicion;
-    line-height: 25px;
-    cursor: pointer;
     text-decoration: $decoracion;
     background-color: $color-principal;
     border: 2px solid $color-principal;
     align-content: $posicion;
-    margin-top: 50px;
     display: flex;
     justify-content: $posicion;
     align-items: $posicion;
@@ -223,7 +181,7 @@ button:hover {
 .services-options-container i {
     color: $color-principal;
     font-size: 50px;
-    margin-top: 50px;
+    @include margenes (50px, none, none, none, none);
 
 }
 
@@ -235,33 +193,20 @@ button:hover {
     letter-spacing: 3.5px;
     text-align: $posicion;
     color: $color-principal;
-    margin-bottom: 35px;
-    margin-top: 50px;
+    @include margenes (50px, 35px, none, none, none);
 }
 
 
 .services-options .paisajes {
-    display: flex;
+    @include btn-interactive;
     flex-direction: $direccion-secundaria;
-    font-size: 50px;
     font-family: $btn;
-    font-style: italic;
     text-align: $posicion;
     justify-content: $posicion;
-    align-items: flex-end;
     color: $color-principal;
     text-decoration: $decoracion;
     background-image: url(../images/faro-del-fin-del-mundo.jpg);
     background-position: $posicion;
-    background-size: 100%;
-    width: 900px;
-    height: 400px;
-    margin: 15px;
-    padding: 15px;
-    border: $color-principal 2px solid;
-    float: left;
-    margin-left: 85px;
-    transition: 0.5s;
 }
 
 .services-options .paisajes:hover {
@@ -269,26 +214,15 @@ button:hover {
 }
 
 .services-options .acrobacias {
-    display: flex;
+    @include btn-interactive;
     flex-direction: $direccion-secundaria;
-    font-size: 50px;
     font-family: $btn;
-    font-style: italic;
     text-align: $posicion;
     justify-content: $posicion;
-    align-items: flex-end;
     color: $color-principal;
     text-decoration: $decoracion;
     background-image: url(../images/acrobacia-telas.jpg);
     background-position: $posicion;
-    background-size: 100%;
-    width: 900px;
-    height: 400px;
-    margin: 15px;
-    padding: 15px;
-    border: $color-principal 2px solid;
-    float: left;
-    transition: 0.5s;
 }
 
 .services-options .acrobacias:hover {
@@ -296,26 +230,15 @@ button:hover {
 }
 
 .services-options .animales {
-    display: flex;
+    @include btn-interactive;
     flex-direction: $direccion-secundaria;
-    font-size: 50px;
     font-family: $btn;
-    font-style: italic;
     text-align: $posicion;
     justify-content: $posicion;
-    align-items: flex-end;
     color: $color-principal;
     text-decoration: $decoracion;
     background-image: url(../images/perro3.png);
     background-position: $posicion;
-    background-size: 100%;
-    width: 900px;
-    height: 400px;
-    margin: 15px;
-    padding: 15px;
-    border: $color-principal 2px solid;
-    float: left;
-    transition: 0.5s;
 }
 
 .services-options .animales:hover {
@@ -325,45 +248,20 @@ button:hover {
 .decorative-picture {
     display: flex;
     flex-direction: $direccion-secundaria;
-    width: 300px;
-    margin-left: 35px;
-    margin-right: 25px;
+    @include espacios (300px, none);
+    @include margenes (none, none, 35px, 25px, none);
     clear: both;
-
 }
 
 .decorative-picture .service-one {
-    float: left;
-    width: 900px;
-    height: 900px;
-    margin: 15px;
-    padding: 15px;
-    border: $color-principal 2px solid;
+    @include decorative-img; 
 }
-
 .decorative-picture .service-two {
-    float: left;
-    width: 900px;
-    height: 900px;
-    margin: 15px;
-    padding: 15px;
-    border: $color-principal 2px solid;
+    @include decorative-img;
 }
-
 .decorative-picture .service-three {
-    float: left;
-    width: 900px;
-    height: 900px;
-    margin: 15px;
-    padding: 15px;
-    border: $color-principal 2px solid;
+    @include decorative-img;
 }
-
 .decorative-picture .service-four {
-    float: left;
-    width: 900px;
-    height: 900px;
-    margin: 15px;
-    padding: 15px;
-    border: $color-principal 2px solid;
+    @include decorative-img;
 }

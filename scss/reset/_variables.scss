@@ -17,3 +17,18 @@ $decoracion: none;
 $posicion: center;
 $direccion-principal: column;
 $direccion-secundaria: row;
+
+//mapas
+$fuentes: (
+    primaria: 60px,
+    secundario: 50px,
+    terciaria: 40px,
+    normal: 30px,
+    cuerpo: 20px
+);
+
+@each $llave, $valor in $fuentes {
+    .titulos__#{$llave} {
+        font-size: $valor;
+    }
+}

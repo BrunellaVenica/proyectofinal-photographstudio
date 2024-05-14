@@ -8,6 +8,7 @@ footer {
     align-items: $posicion;
     justify-content: $posicion;
     flex-direction: $direccion-principal;
+    background-image: linear-gradient(to top, rgb(134, 119, 96), $color-fondo);
 }
 
 .network-links p {
@@ -16,9 +17,9 @@ footer {
     color: $color-principal;
     text-decoration: $decoracion;
     list-style: $decoracion;
-    margin-top: 120px;
     align-items: $posicion;
-    font-size: 50px;
+    font-size: map-get($fuentes, 50px);
+    @include margenes (120px, none, none, none, none);
 }
 
 .network-links a {
@@ -26,20 +27,18 @@ footer {
     color: $color-principal;
     text-decoration: $decoracion;
     list-style: $decoracion;
-    margin-top: 60px;
     align-items: $posicion;
+    @include margenes (60px, none, none, none, none);
 }
 
 .network-links a i {
     display: flex;
     float: left;
-    font-size: 60px;
+    font-size: map-get($fuentes, 60px);
     justify-content: $posicion;
     align-items: $posicion;
     align-content: $posicion;
-    margin-left: 40px;
-    margin-right: 55px;
-
+    @include margenes (none, none, 40px, 55px, none);
 }
 
 .fa-brands .fa-linkedin-in {
@@ -50,35 +49,35 @@ footer {
 .navigation-end {
     display: flex;
     flex-direction: $direccion-principal;
-    margin-top: 20px;
-    font-size: 65px;
+    @include margenes (20px, none, none, none, none);
+    font-size: map-get($fuentes, 60px);
 }
 
 .navigation-end img {
-    background-color: $color-fondo;
-    width: 350px;
+    background-color: none;
     display: flex;
     justify-content: $posicion;
     flex-direction: $direccion-principal;
     align-items: $posicion;
-    margin-top: 30px;
+    @include margenes (30px, none, none, none, none);
+    @include espacios (300px, none);
 }
 
 .navigation-end li {
     list-style: $decoracion;
-    margin-top: 50px;
+    @include margenes (50px, none, none, none, none);
 }
 
 .navigation-end li a {
     color: $color-principal;
     text-decoration: $decoracion;
-    font-size: 45px;
+    font-size: map-get($fuentes, 50px);
 }
 
 .copyright p {
     display: flex;
     color: $color-principal;
-    margin-top: 160px;
-    font-size: 45px;
+    @include margenes (160px, none, none, none, none);
+    font-size: map-get($fuentes, 50px);
 
 }

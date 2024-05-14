@@ -1,77 +1,55 @@
 /*galeria*/
-.button {
-    &__gallery {
-        height: 100%;
-        display: flex;
-        justify-content: $posicion;
-        margin-top: 10px;
-        margin-left: 150px;
-        max-width: 2950px;
-        a {
-            height: 70px;
-            width: 450px;
-            border-radius: 60px;
-            font-family: $cuerpo;
-            font-style: normal;
-            font-size: 35px;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            text-align: $posicion;
-            line-height: 25px;
-            cursor: pointer;
-            text-decoration: $decoracion;
-            background-color: #f0f0f0ea;
-            border: 2px solid #f0f0f0ea;
-            align-content: $posicion;
-            margin-top: 50px;
-            transition: 1s;
-            color: #787673;
-        }
-        a:hover {
-            background: $color-principal;
-            color: $color-hover;
-            transform: scale(1.2);
-        }
-    }
-}
-
-.gallery-container-two {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1000px;
-    padding: 40px;
-    grid-gap: 20px;
+.button__gallery {
+    @include espacios (none, 100%);
+    display: flex;
+    justify-content: $posicion;
+    @include margenes (10px, none, 150px, none, none);
     max-width: 2950px;
-    height: 100%;
+}
+
+.button__gallery a {
+    @include formato; 
+    font-family: $cuerpo;
+    text-align: $posicion;
+    text-decoration: $decoracion;
+    background-color:$color-principal;
+    border: 2px solid $color-principal;
+    align-content: $posicion;
+    color:$btn-hover;
+    max-width: 2950px;
+    transition: 1s;
+}
+
+.button__gallery a:hover {
+    @include animacion-img;
+}
+
+.gallery-container-two{
+    @include formato-grid;
 
 }
 
-.gallery {
-    &__img {
-        &__two {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        :hover {
-            transform: scale(1.1);
-        }
-        :nth-child(1) {
-            grid-column-start: span 2;
-            grid-row-start: span 1;
-        }
-        :nth-child(4) {
-            grid-column-start: span 2;
-            grid-row-start: span 1;
-        }
-        :nth-child(5) {
-            grid-column-start: span 2;
-            grid-row-start: span 1;
-        }
-    }
+.gallery__img__two{
+    @include espacios (100%, 100%);
+    object-fit: cover;
+}
+
+.gallery__img__two:hover{
+    transform: scale(1.1);
+}
+
+.gallery__item__two:nth-child(1) {
+    @include grilla-galeria;
+}
+
+.gallery__item__two:nth-child(4) {
+    @include grilla-galeria;
+}
+
+.gallery__item__two:nth-child(5) {
+    @include grilla-galeria;
 }
 
 .carousel-inner {
-    padding: 40px;
-    margin-right: 50px;
+    @include margenes (none, none, none, 50px, 40px);
 }

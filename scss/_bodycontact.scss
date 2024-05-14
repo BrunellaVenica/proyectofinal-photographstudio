@@ -2,104 +2,83 @@
 .contacto-container {
     font-family: $cuerpo;
     color: $color-principal;
-    font-size: 20px;
     border-radius: 10px;
     display: flex;
     flex-direction: $direccion-principal;
-    width: 1000px;
-    margin-left: 1250px;
+    @include margenes (none, none, 1250px, none, none);
+    @include espacios (1000px, none);
 }
 
 .contacto-container .subtitulo {
     font-family: $cuerpo;
     color: $color-principal;
-    font-size: 30px;
     font-style: italic;
-    display: inline-block;
-    margin-bottom: .5px;
-    margin-left: 10px;
-
+    display: inline-block;;
+    @include margenes (none, none, 740px, none, none);
+    font-size: map-get($fuentes, 20px);
 }
 
 .contacto-container .form {
     border-radius: 10px;
-
 }
 
 .form-container {
     display: flex;
     justify-content: $posicion;
-
 }
 
 .form-container {
     display: flex;
     flex-direction: $direccion-secundaria;
-    width: 1000px;
-    margin-left: 35px;
-    margin-right: 25px;
     clear: both;
     float: left;
-    margin: 15px;
-    padding: 15px;
     border: $color-principal 2px solid;
+    @include margenes (15px, 15px, 740px, 25px, 15px);
+    @include espacios (1000px, none);
 }
 
 
 .write {
     display: flex;
     flex-direction: $direccion-principal;
-    width: 1000px;
-    margin-left: 35px;
-    margin-right: 25px;
     clear: both;
     float: left;
-    margin: 15px;
-    padding: 15px;
     border: $color-principal 2px solid;
+    @include margenes (15px, 15px, 740px, 5px, 15px);
+    @include espacios (1000px, none);
 }
 
 .write iframe {
-    width: 970px;
-    height: 600px;
+    @include espacios (970px, 600px);
 }
 
 .write p {
     font-family: $cuerpo;
     color: $color-principal;
-    font-size: 25px;
 }
 
-.form-label1,
-.form-label2 {
+.form-label1,.form-label2 {
     align-items: end;
 }
 
 .subtitulo h2 {
     font-family: $cuerpo;
-    color: $color-principal;
-    font-size: 30px;
     font-style: italic;
     display: inline-block;
-    margin-left: 10px;
-    margin-bottom: .5px;
+    @include margenes (none, 0.5px, 10px, none, none);
 }
 
 .img-container {
     display: flex;
     flex-direction: $direccion-secundaria;
-    width: 300px;
-    margin-left: 35px;
-    margin-right: 25px;
     clear: both;
-
+    @include margenes (none, none, 35px, 25px, none);
+    @include espacios (300px, none);
 }
 
 .img-container .img img {
     float: left;
-    width: 1200px;
-    height: 1200px;
-    margin: 15px;
-    padding: 15px;
     border: $color-principal 2px solid;
+    @include margenes (15px, 15px, 15px, 15px, 15px);
+    @include espacios (1200px, 1200px);
 }
