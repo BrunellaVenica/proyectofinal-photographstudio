@@ -396,7 +396,7 @@
     /*contacto*/
     .contacto-container {
         @include espacios (100%, 100%);
-        @include margenes (none, none, -40rem, none, 0.5rem);
+        @include margenes (none, none, -4rem, none, 0.5rem);
 
         .subtitulo {
             font-size: 2rem;
@@ -432,7 +432,7 @@
     .img-container {
         .img {
             img {
-                @include espacios (36rem, none);
+                @include espacios (36rem, 20rem);
                 @include margenes (none, none, none, 1rem, none);
                 align-items: center;
             }

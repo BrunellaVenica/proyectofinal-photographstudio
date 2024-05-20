@@ -388,9 +388,10 @@
         @include margenes (none, none, -40rem, none, 0.5rem);
 
         .subtitulo {
-            font-size: 1.5rem;
-            width: 30rem;
+            font-size: 1rem;
             margin-left: 41.5rem;
+            margin-right: 0;
+            padding: 0;
         }
     }
 
@@ -419,9 +420,10 @@
 
     .subtitulo {
         h2 {
-            font-size: 1.5rem;
-            width: 30rem;
+            font-size: 1rem;
             margin-left: 41.5rem;
+            margin-right: 0;
+            padding: 0;
         }
     }
 

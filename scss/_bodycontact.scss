@@ -16,7 +16,7 @@
         color: $color-principal;
         font-style: italic;
         display: inline-block;
-        @include margenes (none, none, -40rem, none, none);
+        @include margenes (none, none, -20rem, none, none);
         font-size: map-get($fuentes, 20px);
     }
     .form {
