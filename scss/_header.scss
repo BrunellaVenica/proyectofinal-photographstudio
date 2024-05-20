@@ -8,52 +8,49 @@ header {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
-    font-size: map-get($fuentes, 40px);
-    @include margenes (none, 5px, none, none, 30px);
-}
-
-.navigation-container img {
-    display: flex;
-    color: $color-principal;
-    width: 500px;
-    margin-left: 10px;
+    font-size: map-get($fuentes, 4rem);
+    @include margenes (none, 5px, none, none, 10px);
+    img {
+        display: flex;
+        color: $color-principal;
+        width: 300px;
+        height: 50px;
+        margin-top: 15px;
+    }
+    .nav-bar {
+        display: flex;
+        list-style: $decoracion;
+        text-decoration: $decoracion;
+        flex-direction: $direccion-secundaria;
+        font-size: map-get($fuentes, 5rem);
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        width: 100%;
+        li { 
+            a {
+                justify-content: space-between;
+                color: $color-principal;
+                text-decoration: $decoracion;
+                list-style: $decoracion;
+                font-size: map-get($fuentes, 5rem);
+                width: fit-content;
+                display: flex;
+                justify-content: end;
+                @include margenes (5px, none, 15px, 25px, 10px);
+                border-radius: 30px;
+                &:hover {
+                    background-color: $color-secundario;
+                    color: $color-hover;
+                }
+            }
+        }
+    }
 }
 
 .scale-up-left {
-	-webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-
-.navigation-container .nav-bar {
-    display: flex;
-    list-style: $decoracion;
-    text-decoration: $decoracion;
-    flex-direction: $direccion-secundaria;
-    font-size: map-get($fuentes, 50px);
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-}
-
-.navigation-container .nav-bar li a {
-    justify-content: space-between;
-}
-
-.navigation-container .nav-bar li a {
-    color: $color-principal;
-    text-decoration: $decoracion;
-    list-style: $decoracion;
-    font-size: map-get($fuentes, 50px);
-    width: fit-content;
-    display: flex;
-    justify-content: end;
-    @include margenes (5px, none, 15px, 25px, none);
-}
-
-.navigation-container .nav-bar li a:hover {
-    background-color: $color-secundario;
-    color: $color-hover;
+    -webkit-animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .logotype {
@@ -64,22 +61,19 @@ header {
     background-image: url(../images/background-image2.png);
     background-size: cover;
     background-position: $posicion;
-}
-
-.logotype img {
-    @include espacios (250px, none);
-}
-
-.logotype a {
-    color: $color-principal;
-    text-decoration: $decoracion;
-}
-
-.logotype a i {
-    color: $color-principal;
-    text-decoration: $decoracion;
-    @include margenes (40px, none, none, none, none);
-    font-size: map-get($fuentes, 50px);
+    img {
+        @include espacios (250px, none);
+    }
+    a {
+        color: $color-principal;
+        text-decoration: $decoracion;
+        i {
+            color: $color-principal;
+            text-decoration: $decoracion;
+            @include margenes (40px, none, none, none, none);
+            font-size: map-get($fuentes, 5rem);
+        }
+    }
 }
 
 h1 {
@@ -87,7 +81,7 @@ h1 {
     font-family: $titulo-principal;
     color: $color-secundario;
     font-style: italic;
-    font-size: map-get($fuentes, 50px);
+    font-size: map-get($fuentes, 5rem);
     @include margenes (40px, none, none, none, none);
     align-content: $posicion;
     justify-content: $posicion;
@@ -98,7 +92,7 @@ h2 {
     font-family: $cuerpo;
     color: $color-secundario;
     font-style: normal;
-    font-size: map-get($fuentes, 40px);
+    font-size: map-get($fuentes, 4rem);
     @include margenes (10px, none, none, none, none);
     align-content: $posicion;
     justify-content: $posicion;

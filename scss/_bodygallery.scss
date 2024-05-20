@@ -1,55 +1,59 @@
 /*galeria*/
-.button__gallery {
-    @include espacios (none, 100%);
-    display: flex;
-    justify-content: $posicion;
-    @include margenes (10px, none, 150px, none, none);
-    max-width: 2950px;
-}
+.button {
+    &__gallery {
+        @include espacios (none, 100%);
+        display: flex;
+        justify-content: $posicion;
+        @include margenes (10px, none, 150px, none, none);
+        max-width: 2950px;
+        a {
+            @include formato; 
+            font-family: $cuerpo;
+            text-align: $posicion;
+            text-decoration: $decoracion;
+            background-color:$color-principal;
+            border: 2px solid $color-principal;
+            align-content: $posicion;
+            color:$btn-hover;
+            max-width: 2950px;
+            transition: 1s;
+            &:hover {
+                @include animacion-img;
+            }
+        }
+    }
+    
 
-.button__gallery a {
-    @include formato; 
-    font-family: $cuerpo;
-    text-align: $posicion;
-    text-decoration: $decoracion;
-    background-color:$color-principal;
-    border: 2px solid $color-principal;
-    align-content: $posicion;
-    color:$btn-hover;
-    max-width: 2950px;
-    transition: 1s;
-}
-
-.button__gallery a:hover {
-    @include animacion-img;
 }
 
 .gallery-container-two{
     @include formato-grid;
-
 }
 
-.gallery__img__two{
-    @include espacios (100%, 100%);
-    object-fit: cover;
+.gallery {
+    &__img {
+        &__two{
+            @include espacios (100%, 100%);
+            object-fit: cover;
+            &:hover{
+                transform: scale(1.1);
+            }
+            &:nth-child(1) {
+                @include grilla-galeria;
+            }
+            &:nth-child(4) {
+                @include grilla-galeria;
+            }
+            
+            &:nth-child(5) {
+                @include grilla-galeria;
+            }
+        }
+    }
 }
 
-.gallery__img__two:hover{
-    transform: scale(1.1);
-}
-
-.gallery__item__two:nth-child(1) {
-    @include grilla-galeria;
-}
-
-.gallery__item__two:nth-child(4) {
-    @include grilla-galeria;
-}
-
-.gallery__item__two:nth-child(5) {
-    @include grilla-galeria;
-}
-
-.carousel-inner {
-    @include margenes (none, none, none, 50px, 40px);
+.carousel-container_slide {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    transition-duration: $carousel-transition-duration;
 }

@@ -11,6 +11,7 @@ $color-hover: #79aab5;
 $btn-hover: #787673;
 $fondo-mq-tablet: #a39a88;
 $fondo-mq-telefono: #6c8b93;
+$tarjeta-presentacion-mobile: #a5bcc2;
 
 //otros parametros
 $decoracion: none; 
@@ -20,11 +21,12 @@ $direccion-secundaria: row;
 
 //mapas
 $fuentes: (
-    primaria: 60px,
-    secundario: 50px,
-    terciaria: 40px,
-    normal: 30px,
-    cuerpo: 20px
+    primaria: 6rem,
+    secundario: 5rem,
+    terciaria: 4rem,
+    normal: 3rem,
+    cuerpo: 2rem,
+    formato: 1rem,
 );
 
 @each $llave, $valor in $fuentes {
@@ -32,3 +34,26 @@ $fuentes: (
         font-size: $valor;
     }
 }
+
+//carousel//
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .5s ease;
+
+$carousel-indicator-width:           30px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             70%;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-transition-duration:       .6s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out;

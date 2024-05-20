@@ -4,51 +4,44 @@ main {
     @include margenes (10px, none, none, none, none);
 }
 
-
 .start-interaction {
     display: flex;
     flex-direction: $direccion-principal;
-
-}
-
-.start-interaction a {
-    display: flex;
-    flex-direction: $direccion-principal;
-    justify-content: $posicion;
-    align-items: $posicion;
-    text-decoration: $decoracion;
-    @include margenes (5px, 55px, none, none, none);
-}
-
-.start-interaction p {
-    font-family: $cuerpo;
-    color: $color-principal;
-    font-style: normal;
-    font-size: 18px;
-    font-weight: 200;
-}
-
-.start-interaction img {
-    @include espacios (50%, none);
+    a {
+        display: flex;
+        flex-direction: $direccion-principal;
+        justify-content: $posicion;
+        align-items: $posicion;
+        text-decoration: $decoracion;
+        @include margenes (5px, 55px, none, none, none);
+    }
+    p {
+        font-family: $cuerpo;
+        color: $color-principal;
+        font-style: normal;
+        font-size: 18px;
+        font-weight: 200;
+    }
+    img {
+        @include espacios (50%, none);
+    }
 }
 
 .presentacion {
-    @include espacios (2950px, 700px);
+    @include espacios (150rem, 60rem);
     @include presentacion;
     background-color: $color-fondo;
-}
-
-.presentacion .img {
-    width: 50%;
-    align-content: $posicion;
-}
-
-.presentacion .img img {
-    vertical-align: top;
-    border-radius: 5px;
-    @include espacios (1200px, 600px);
-    @include margenes (15px, 15px, 200px, 15px, 15px);
-    border: $color-principal 2px solid;
+    .img {
+        width: 50%;
+        align-content: $posicion;
+        img {
+            vertical-align: top;
+            border-radius: 5px;
+            @include espacios (70rem, 40rem);
+            @include margenes (1.5rem, 1.5rem, 2rem, 1.5rem, 1.5rem);
+            border: $color-principal 2px solid;
+        }
+    }
 }
 
 .producto-info {
@@ -60,12 +53,20 @@ main {
 
 .producto-texto {
     @include espacios (100%, none);
-}
-
-.producto-texto h1 {
-    @include margenes (5px, none, 130px, none, 52px);
-    font-size: 60px;
-    color: $color-principal;
+    h1 {
+        @include margenes (0.5rem, none, 3rem, none, 1.5rem);
+        font-size: 60px;
+        color: $color-principal;
+    }
+    p {
+        font-size: 35px;
+        font-family: $cuerpo;
+        color: $color-principal;
+        letter-spacing: 1.5px;
+        @include espacios (none, 125px);
+        text-align: justify;
+        @include margenes (15px, none, 38px, none, none);
+    }
 }
 
 .producto-texto h1,
@@ -73,42 +74,30 @@ main {
     font-family: $cuerpo;
 }
 
-.producto-texto p {
-    font-size: 35px;
-    font-family: $cuerpo;
-    color: $color-principal;
-    letter-spacing: 1.5px;
-    @include espacios (none, 125px);
-    text-align: justify;
-    @include margenes (15px, none, 38px, none, none);
-}
-
 .precio-btn {
     @include espacios (none, 200px);
     display: flex;
     justify-content: $posicion;
-    @include margenes (320px, none, 150px, none, none);
+    @include margenes (30rem, none, 15rem, none, none);
     text-align: $posicion;
-
+    a {
+        @include formato;
+        @include espacios (350px, 50px);
+        @include margenes (-10px, none, none, none, none);
+        font-family: $cuerpo;
+        text-align: $cuerpo;
+        background-color: $color-principal;
+        border: 2px solid $color-principal;
+        align-content: $posicion;
+        color: $btn-hover;
+        text-decoration: $decoracion;
+        &:hover {
+            background: $color-principal;
+            color: $color-hover;
+        }
+    }
 }
 
-.precio-btn a {
-    @include formato;
-    @include espacios (350px, 50px);
-    @include margenes (-10px, none, none, none, none);
-    font-family: $cuerpo;
-    text-align: $cuerpo;
-    background-color: $color-principal;
-    border: 2px solid $color-principal;
-    align-content: $posicion;
-    color: $btn-hover;
-    text-decoration: $decoracion;
-}
-
-.precio-btn a:hover {
-    background: $color-principal;
-    color: $color-hover;
-}
 
 button {
     @include formato;
@@ -120,13 +109,11 @@ button {
     border: 2px solid $color-principal;
     align-content: $posicion;
     color: $btn-hover;
+    &:hover {
+        background: $color-principal;
+        color: $color-hover;
+    }
 }
-
-button:hover {
-    background: $color-principal;
-    color: $color-hover;
-}
-
 
 .gallery-container {
     @include formato-grid;
@@ -156,93 +143,85 @@ button:hover {
     justify-content: $posicion;
     flex-direction: $direccion-principal;
     align-items: $posicion;
+    a {
+        @include formato;
+        @include espacios (350px, 50px);
+        font-family: $cuerpo;
+        text-align: $posicion;
+        text-decoration: $decoracion;
+        background-color: $color-principal;
+        border: 2px solid $color-principal;
+        align-content: $posicion;
+        display: flex;
+        justify-content: $posicion;
+        align-items: $posicion;
+        color: $btn-hover;
+        &:hover {
+            background: $color-principal;
+            color: $color-hover;
+        }
+    }
+    i {
+        color: $color-principal;
+        font-size: 50px;
+        @include margenes (50px, none, none, none, none);
+    
+    }
 }
 
-.services-options-container a {
-    @include formato;
-    @include espacios (350px, 50px);
-    font-family: $cuerpo;
-    text-align: $posicion;
-    text-decoration: $decoracion;
-    background-color: $color-principal;
-    border: 2px solid $color-principal;
-    align-content: $posicion;
-    display: flex;
-    justify-content: $posicion;
-    align-items: $posicion;
-    color: $btn-hover;
-}
-
-.services-options-container a:hover {
-    background: $color-principal;
-    color: $color-hover;
-}
-
-.services-options-container i {
-    color: $color-principal;
-    font-size: 50px;
-    @include margenes (50px, none, none, none, none);
-
-}
-
-.services-options h5 {
-    display: flex;
-    flex-direction: $direccion-principal;
-    font-size: 60px;
-    font-family: $cuerpo;
-    letter-spacing: 3.5px;
-    text-align: $posicion;
-    color: $color-principal;
-    @include margenes (50px, 35px, none, none, none);
-}
-
-
-.services-options .paisajes {
-    @include btn-interactive;
-    flex-direction: $direccion-secundaria;
-    font-family: $btn;
-    text-align: $posicion;
-    justify-content: $posicion;
-    color: $color-principal;
-    text-decoration: $decoracion;
-    background-image: url(../images/faro-del-fin-del-mundo.jpg);
-    background-position: $posicion;
-}
-
-.services-options .paisajes:hover {
-    transform: scale(1.2);
-}
-
-.services-options .acrobacias {
-    @include btn-interactive;
-    flex-direction: $direccion-secundaria;
-    font-family: $btn;
-    text-align: $posicion;
-    justify-content: $posicion;
-    color: $color-principal;
-    text-decoration: $decoracion;
-    background-image: url(../images/acrobacia-telas.jpg);
-    background-position: $posicion;
-}
-
-.services-options .acrobacias:hover {
-    transform: scale(1.2);
-}
-
-.services-options .animales {
-    @include btn-interactive;
-    flex-direction: $direccion-secundaria;
-    font-family: $btn;
-    text-align: $posicion;
-    justify-content: $posicion;
-    color: $color-principal;
-    text-decoration: $decoracion;
-    background-image: url(../images/perro3.png);
-    background-position: $posicion;
-}
-
-.services-options .animales:hover {
-    transform: scale(1.2);
+.services-options {
+    h5 {
+        display: flex;
+        flex-direction: $direccion-principal;
+        font-size: 60px;
+        font-family: $cuerpo;
+        letter-spacing: 3.5px;
+        text-align: $posicion;
+        color: $color-principal;
+        @include margenes (50px, 35px, none, none, none);
+    }
+    .paisajes {
+        @include btn-interactive;
+        flex-direction: $direccion-secundaria;
+        font-family: $btn;
+        text-align: $posicion;
+        justify-content: $posicion;
+        color: $color-principal;
+        text-decoration: $decoracion;
+        background-image: url(../images/faro-del-fin-del-mundo.jpg);
+        background-position: $posicion;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .acrobacias {
+        @include btn-interactive;
+        flex-direction: $direccion-secundaria;
+        font-family: $btn;
+        text-align: $posicion;
+        justify-content: $posicion;
+        color: $color-principal;
+        text-decoration: $decoracion;
+        background-image: url(../images/acrobacia-telas.jpg);
+        background-position: $posicion;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    .animales {
+        @include btn-interactive;
+        flex-direction: $direccion-secundaria;
+        font-family: $btn;
+        text-align: $posicion;
+        justify-content: $posicion;
+        color: $color-principal;
+        text-decoration: $decoracion;
+        background-image: url(../images/perro3.png);
+        background-position: $posicion;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
 }
 
 .decorative-picture {
@@ -251,17 +230,16 @@ button:hover {
     @include espacios (300px, none);
     @include margenes (none, none, 35px, 25px, none);
     clear: both;
-}
-
-.decorative-picture .service-one {
-    @include decorative-img; 
-}
-.decorative-picture .service-two {
-    @include decorative-img;
-}
-.decorative-picture .service-three {
-    @include decorative-img;
-}
-.decorative-picture .service-four {
-    @include decorative-img;
+    .service-one {
+        @include decorative-img; 
+    }
+    .service-two {
+        @include decorative-img;
+    }
+    .service-three {
+        @include decorative-img;
+    }
+    .service-four {
+        @include decorative-img;
+    }
 }

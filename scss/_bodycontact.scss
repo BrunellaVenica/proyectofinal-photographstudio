@@ -1,42 +1,40 @@
 /*contacto*/
 .contacto-container {
+    padding: 0;
     font-family: $cuerpo;
     color: $color-principal;
     border-radius: 10px;
     display: flex;
     flex-direction: $direccion-principal;
-    @include margenes (none, none, 1250px, none, none);
-    @include espacios (1000px, none);
-}
-
-.contacto-container .subtitulo {
-    font-family: $cuerpo;
-    color: $color-principal;
-    font-style: italic;
-    display: inline-block;;
-    @include margenes (none, none, 740px, none, none);
-    font-size: map-get($fuentes, 20px);
-}
-
-.contacto-container .form {
-    border-radius: 10px;
+    @include margenes (none, none, 75rem, none, 0);
+    @include espacios (80rem, none);
+    h2 {
+        font-size: 2rem;
+    }
+    .subtitulo {
+        font-family: $cuerpo;
+        color: $color-principal;
+        font-style: italic;
+        display: inline-block;
+        @include margenes (none, none, -40rem, none, none);
+        font-size: map-get($fuentes, 20px);
+    }
+    .form {
+        border-radius: 10px;
+    }
 }
 
 .form-container {
     display: flex;
     justify-content: $posicion;
-}
-
-.form-container {
     display: flex;
     flex-direction: $direccion-secundaria;
     clear: both;
     float: left;
     border: $color-principal 2px solid;
-    @include margenes (15px, 15px, 740px, 25px, 15px);
-    @include espacios (1000px, none);
+    @include margenes (1.5rem, 1.5rem, -40rem, 1.5rem, 1.5rem);
+    @include espacios (50%, none);
 }
-
 
 .write {
     display: flex;
@@ -44,28 +42,32 @@
     clear: both;
     float: left;
     border: $color-principal 2px solid;
-    @include margenes (15px, 15px, 740px, 5px, 15px);
-    @include espacios (1000px, none);
+    @include margenes (1.5rem, 1.5rem, -40rem, 1.5rem, 1.5rem);
+    @include espacios (50%, none);
+    iframe {
+        @include espacios (37rem, 40rem);
+    }
+    p {
+        font-family: $cuerpo;
+        color: $color-principal;
+    }
 }
 
-.write iframe {
-    @include espacios (970px, 600px);
-}
-
-.write p {
-    font-family: $cuerpo;
-    color: $color-principal;
-}
-
-.form-label1,.form-label2 {
+.form-label1,
+.form-label2 {
     align-items: end;
 }
 
-.subtitulo h2 {
-    font-family: $cuerpo;
-    font-style: italic;
-    display: inline-block;
-    @include margenes (none, 0.5px, 10px, none, none);
+.write-container {
+    .subtitulo {
+        h2 {
+            font-family: $cuerpo;
+            font-style: italic;
+            display: inline-block;
+            @include margenes (none, 0.5px, 10px, none, none);
+            font-size: 2rem;
+        }
+    }    
 }
 
 .img-container {
@@ -73,12 +75,14 @@
     flex-direction: $direccion-secundaria;
     clear: both;
     @include margenes (none, none, 35px, 25px, none);
-    @include espacios (300px, none);
-}
-
-.img-container .img img {
-    float: left;
-    border: $color-principal 2px solid;
-    @include margenes (15px, 15px, 15px, 15px, 15px);
-    @include espacios (1200px, 1200px);
+    @include espacios (50%, none);
+    .img {
+        margin-bottom: 50px;
+        img {
+            float: left;
+            border: $color-principal 2px solid;
+            @include margenes (1.5rem, 1.5rem, 0, 1.5rem, 1.5rem);
+            @include espacios (45rem, 45rem);
+        }
+    }
 }

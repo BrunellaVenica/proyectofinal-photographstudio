@@ -1,48 +1,47 @@
 /*blog*/
-.articles p {
-    color: $color-principal;
-    font-family: $cuerpo;
-    font-size: map-get($fuentes, 20px);
-    font-style: italic;
+.articles {
+    p {
+        color: $color-principal;
+        font-family: $cuerpo;
+        font-size: map-get($fuentes, 20px);
+        font-style: italic;
+    }
 }
 
 .bar-container {
     display: flex;
     flex-direction: $direccion-principal;
-
-}
-
-.bar-container h2 {
-    color: $color-principal;
-    font-size: map-get($fuentes, 40px);
-    font-family: $cuerpo;
-    font-style: italic;
-    align-items: $posicion;
-    @include margenes (15px, none, none, none, none);
+    h2 {
+        color: $color-principal;
+        font-size: map-get($fuentes, 40px);
+        font-family: $cuerpo;
+        font-style: italic;
+        align-items: $posicion;
+        @include margenes (15px, none, none, none, none);
+    }
 }
 
 .bar-principal {
     display: flex;
     flex-direction: $direccion-secundaria;
     align-items: $posicion;
-}
-
-.bar-principal select {
-    display: flex;
-    flex-direction: $direccion-secundaria;
-    @include margenes (none, none, 70px, none, none);
-}
-
-.bar-principal form {
-    display: flex;
-    flex-direction: $direccion-secundaria;
-    @include margenes (none, none, 1300px, none, none);
+    select {
+        font-size: 1.25rem;
+        display: flex;
+        flex-direction: $direccion-secundaria;
+        @include margenes (none, none, 70px, none, none);
+    }
+    form {
+        display: flex;
+        flex-direction: $direccion-secundaria;
+        @include margenes (none, none, 70rem, none, none);
+    }    
 }
 
 /*botones*/
 .card {
     @include margenes (35px, 35px, 35px, 35px, none);
-    @include espacios (18rem, none);
+    @include espacios (22rem, none);
 }
 
 .card-container {
@@ -52,44 +51,51 @@
     justify-items: $posicion;
 }
 
-.card-container .card img{
-    @include espacios (430px, 250px);
+.card {
+    img{
+        @include espacios (22rem, 18rem);
+    }    
 }
 
-.card-body p {
-    text-align: justify;
+.card-body {
+    p {
+        text-align: justify;
+    }
 }
 
 .feeds {
     display: inline-block;
     @include margenes (none, 25px, none, none, none);
+    .feed {
+        i {
+            @include margenes (none, none, 30px, none, none);
+            color: $btn-hover;
+            &:hover {
+                    background: $color-fondo;
+                    color: $color-hover;
+            }
+            &:visited {
+                background: $color-principal;
+                background-color: $color-fondo;
+                color: $color-hover;
+            }
+        }
+    }
 }
 
-.feeds .feed i {
-    @include margenes (none, none, 30px, none, none);
-    color: $btn-hover;
+.buscador {
+    
+    i {
+        list-style: $decoracion;
+        color: $color-principal;
+    }
 }
 
-.feeds .feed i:hover {
-    background: $color-fondo;
-    color: $color-hover;
-}
-
-.feeds .feed i:visited {
-    background: $color-principal;
-    background-color: $color-fondo;
-    color: $color-hover;
-
-}
-
-.buscador i {
-    list-style: $decoracion;
-    color: $color-principal;
-}
-
-.articles p {
-    font-family: $cuerpo;
-    color: $color-principal;
-    font-style: italic;
-    font-size: map-get($fuentes, 20px);
+.articles {
+    p {
+        font-family: $cuerpo;
+        color: $color-principal;
+        font-style: italic;
+        font-size: map-get($fuentes, 20px);
+    }
 }

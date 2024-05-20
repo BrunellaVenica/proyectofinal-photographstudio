@@ -7,13 +7,12 @@
             text-align: $posicion;
             color: $color-secundario;
             @include setting-img;
+            padding: 15rem;
             p {
                 @include secciones-texto;
             }
             a {
                 @include formato;
-                @include espacios (350px, 50px);
-                @include margenes (none, none, 500px, none, none);
                 font-family: $cuerpo;
                 text-align: $posicion;
                 text-decoration: $decoracion;
@@ -22,9 +21,12 @@
                 justify-content: $posicion;
                 align-items: $posicion;
                 display: flex;
-            }
-            a:hover {
-                @include animacion-img;
+                padding: 1rem;
+                @include espacios (13rem, 3rem);
+                @include margenes (-20rem, none, 36rem, none, none);
+                &:hover {
+                    @include animacion-img;
+                }
             }
         }
         &__arquitectura {
@@ -33,13 +35,14 @@
             text-align: $posicion;
             color: $color-principal;
             @include setting-img;
+            padding: 15rem;
             p {
                 @include secciones-texto;
             }
             a {
                 @include formato;
-                @include espacios (350px, 50px);
-                @include margenes (none, none, 500px, none, none);
+                @include espacios (13rem, 3rem);
+                @include margenes (-20rem, none, 36rem, none, none);
                 font-family: $cuerpo;
                 text-align: $posicion;
                 text-decoration: $decoracion;
@@ -48,10 +51,10 @@
                 justify-content: $posicion;
                 align-items: $posicion;
                 display: flex;
+                &:hover {
+                    @include animacion-img;
+                } 
             }
-            a:hover {
-                @include animacion-img;
-            } 
         }
         &__acrobacias {
             background-image: url(../images/portada-acro.jpg);
@@ -59,13 +62,14 @@
             text-align: $posicion;
             color: $color-principal;
             @include setting-img;
+            padding: 15rem;
             p {
                 @include secciones-texto;
             }
             a {
                 @include formato;
-                @include espacios (350px, 50px);
-                @include margenes (none, none, 500px, none, none);
+                @include espacios (13rem, 3rem);
+                @include margenes (-20rem, none, 36rem, none, none);
                 font-family: $cuerpo;
                 text-align: $posicion;
                 text-decoration: $decoracion;
@@ -74,10 +78,9 @@
                 justify-content: $posicion;
                 align-items: $posicion;
                 display: flex;
-                
-            }
-            a:hover {
-                @include animacion-img;
+                &:hover {
+                    @include animacion-img;
+                }
             }
         }
         &__animales {
@@ -86,13 +89,14 @@
             text-align: $posicion;
             color: $color-principal;
             @include setting-img;
+            padding: 15rem;
             p {
                 @include secciones-texto;
             }
             a {
                 @include formato;
-                @include espacios (350px, 50px);
-                @include margenes (none, none, 500px, none, none);
+                @include espacios (13rem, 3rem);
+                @include margenes (-20rem, none, 36rem, none, none);
                 font-family: $cuerpo;
                 text-align: $posicion;
                 text-decoration: $decoracion;
@@ -101,10 +105,10 @@
                 justify-content: $posicion;
                 align-items: $posicion;
                 display: flex;
-            }
-            a:hover {
-                @include animacion-img;
-            }            
+                &:hover {
+                    @include animacion-img;
+                } 
+            }             
         }
     }
 }

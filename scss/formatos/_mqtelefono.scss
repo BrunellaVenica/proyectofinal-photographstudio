@@ -1,118 +1,121 @@
 /* Index / Servicios  */
 @media (min-width: 401px) and (max-width: 768px) {
 
-
     /*Header*/
     .navigation-container {
-        background-color: $fondo-mq-telefono;
+        background-size: cover;
         flex-direction: $direccion-principal;
+        background-image: linear-gradient(to top, rgb(121, 170, 181), rgb(202, 223, 227));
 
+        img {
+            color: $color-principal;
+            justify-content: $posicion;
+            @include margenes (1.5rem, 1.5rem, 6rem, none, none);
+            @include espacios (10rem, 1.8rem);
+        }
+
+        .nav-bar {
+            width: 80%;
+            flex-direction: column;
+            align-items: start;
+
+            ul {
+                margin-left: 0;
+                margin-right: 0;
+
+                li {
+                    a {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
     }
 
-    .navigation-container img {
-        @include espacios (150px, none);
-        @include margenes (none, none, 150px, none, none);
-    }
-
-    .navigation-container .nav-bar {
-        @include margenes (10px, none, none, none, 0.5px);
-
-    }
-
-    .navigation-container .nav-bar li a {
-        font-size: 12.5px;
-        justify-content: $posicion;
-
-    }
-
-    .navigation-container .nav-bar li a:hover {
-        background-color: $color-principal;
-        color: $fondo-mq-telefono;
-    }
-
-    .logotype img {
-        @include espacios (100px, none);
-    }
-
-    .logotype a i {
-        font-size: map-get($fuentes, 40px);
-        @include margenes (30px, none, none, none, none);
+    .logotype {
+        img {
+            @include espacios (25%, none);
+        }
     }
 
     h1 {
-        font-size: map-get($fuentes, 20px);
-        align-content: $posicion;
-        justify-content: $posicion;
-        @include margenes (30px, none, 20px, none, none);
+        font-size: 1rem;
     }
 
     h2 {
-        font-size: map-get($fuentes, 20px);
+        font-size: 0.75rem;
     }
 
-    /*MainIndex*/
+    /*Main*/
     main {
-        background-color: $fondo-mq-telefono;
+        background-image: linear-gradient(to top, rgb(202, 223, 227), rgb(121, 170, 181));
     }
 
-    .start-interaction a {
-        font-size: map-get($fuentes, 20px);
-        font-weight: 120px;
+    .start-interaction {
+        button {
+            width: 15rem;
+            height: 2rem;
+        }
+
+        p {
+            font-size: 0.5rem;
+            font-weight: none;
+        }
     }
 
-    .start-interaction a button {
-        @include espacios (130px, 40px);
-    }
+    .presentacion-container {
+        .presentacion {
+            @include espacios (23rem, 38rem);
+            padding: 0;
+            flex-direction: column;
+            background-color: $tarjeta-presentacion-mobile;
 
-    .presentacion {
-        flex-direction: column-reverse;
-        @include espacios (370px, 350px);
-    }
+            .img {
+                @include espacios (20rem, 10rem);
 
-    .presentacion .img {
-        @include espacios (50%, none);
-    }
+                img {
+                    border-radius: 0.5px;
+                    border: $color-principal 1px solid;
+                    @include margenes (100px, 5px, 15px, none, 5px);
+                    @include espacios (21.5rem, 14rem);
+                }
+            }
 
-    .presentacion .img img {
-        border-radius: 5px;
-        border: $color-principal 1px solid;
-        @include espacios (350px, 250px);
-        @include margenes (0px, 5px, 15px, none, 5px);
-    }
+            .producto-info {
+                border-radius: 0px 7px 10px 7px;
+                background: none;
+                background-color: none;
+                @include espacios (50%, none);
 
-    .producto-info {
-        @include espacios (50%, none);
-        border-radius: 0px 7px 10px 7px;
-        background: $color-principal;
-        background-color: $fondo-mq-telefono;
-    }
+                .producto-texto {
+                    @include espacios (100%, 100%);
 
-    .producto-texto {
-        @include espacios (100%, none);
-    }
+                    h1 {
+                        font-size: 1rem;
+                        align-items: $posicion;
+                        @include margenes (5rem, none, 5px, none, 5px);
+                        @include espacios (22rem, none);
+                    }
 
-    .producto-texto h1 {
-        font-size: map-get($fuentes, 20px);
-        align-items: $posicion;
-        @include margenes (none, none, 30px, none, 0px);
-    }
+                    p {
+                        font-size: 0.80rem;
+                        @include margenes (1rem, none, 0.5rem, none, none);
+                        @include espacios (22rem, none);
+                    }
+                }
 
-
-    .producto-texto p {
-        display: none;
-    }
-
-    .precio-btn {
-        display: none;
-
+                .precio-btn {
+                    display: none;
+                }
+            }
+        }
     }
 
     .gallery-container {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 400px;
-        grid-gap: 20px;
-        @include margenes (none, none, none, none, 20px);
+        grid-auto-rows: 15rem;
+        grid-gap: 1rem;
+        @include margenes (none, none, 0rem, none, 1.5rem);
     }
 
     .gallery__img {
@@ -135,311 +138,355 @@
         grid-row-start: span 1;
     }
 
-
-    .services-options-container a {
-        font-size: map-get($fuentes, 20px);
-        @include espacios (150px, 30px);
+    .services-options-container {
+        a {
+            height: 30px;
+            width: 200px;
+            font-size: map-get($fuentes, 3rem);
+            @include espacios (200px, 30px);
+        }
     }
 
-    .services-options h5 {
-        font-size: map-get($fuentes, 30px);
-    }
+    .services-options {
+        h5 {
+            font-size: 2rem;
+        }
 
+        .paisajes {
+            font-size: 2rem;
+            float: none;
+            transition: 0.5s;
+            @include espacios (22rem, 10rem);
+            @include margenes (none, none, 1.5rem, 0, 1rem);
 
-    .services-options .paisajes {
-        font-size: map-get($fuentes, 30px);
-        @include espacios (370px, 200px);
-        @include margenes (none, none, 18px, none, none);
-    }
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
 
-    .services-options .paisajes:hover {
-        transform: scale(0.9);
-    }
+        .acrobacias {
+            font-size: 2rem;
+            float: none;
+            transition: 0.5s;
+            @include espacios (22rem, 10rem);
+            @include margenes (none, none, 1.5rem, 0, 1rem);
 
-    .services-options .acrobacias {
-        font-size: map-get($fuentes, 30px);
-        @include espacios (370px, 200px);
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
 
-    }
+        .animales {
+            font-size: 2rem;
+            float: none;
+            transition: 0.5s;
+            @include espacios (22rem, 10rem);
+            @include margenes (none, none, 1.5rem, 0, 1rem);
 
-    .services-options .acrobacias:hover {
-        transform: scale(0.9);
-    }
-
-    .services-options .animales {
-        font-size: map-get($fuentes, 30px);
-        @include espacios (370px, 200px);
-    }
-
-    .services-options .animales:hover {
-        transform: scale(0.9);
+            &:hover {
+                transform: scale(0.9);
+            }
+        }
     }
 
     .decorative-picture {
-        flex-direction: $direccion-principal;
-        @include espacios (150px, none);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1.5rem;
+        margin: 0;
+        @include margenes (1rem, 1rem, 2.5rem, 0rem, 0rem);
 
-    }
+        .service-one {
+            @include espacios (22rem, 28rem);
+            @include margenes (none, none, -0.7rem, none, none);
+        }
 
-    .decorative-picture .service-one {
-        border: 1.5px solid $color-principal;
-        @include espacios (360px, 450px);
-        @include margenes (none, none, -15px, none, 5px);
-    }
+        .service-two {
+            @include espacios (22rem, 28rem);
+            @include margenes (none, none, -0.7rem, none, none);
+        }
 
-    .decorative-picture .service-two {
-        border: 1.5px solid $color-principal;
-        @include espacios (360px, 450px);
-        @include margenes (none, none, -15px, none, 5px);
-    }
+        .service-three {
+            @include espacios (22rem, 28rem);
+            @include margenes (none, none, -0.7rem, none, none);
+        }
 
-    .decorative-picture .service-three {
-        border: 1.5px solid $color-principal;
-        @include espacios (360px, 450px);
-        @include margenes (none, none, -15px, none, 5px);
-    }
-
-    .decorative-picture .service-four {
-        border: 1.5px solid $color-principal;
-        @include espacios (360px, 230px);
-        @include margenes (none, none, -15px, none, 5px);
+        .service-four {
+            @include espacios (22rem, 28rem);
+            @include margenes (none, none, -0.7rem, none, none);
+        }
     }
 
     /*servicios*/
-    .button__sections__lugares {
-        background-size: 860px 350px;
-        text-align: $posicion;
-        color: $color-principal;
-        @include margenes (0px, none, none, none, 130px);
-    }
+    .button {
+        &__sections {
+            &__lugares {
+                padding: 5rem;
+                p {
+                    font-size: 2rem;
+                    padding: 5rem;
+                }
 
-    .button__sections__lugares p {
-        font-size: map-get($fuentes, 30px);
-        text-align: $posicion;
-    }
+                a {
+                    padding: 0.05rem;
+                    @include espacios (13rem, 3rem);
+                    @include margenes (-5rem, none, 3rem, none, none);
+                }
+            }
 
+            &__arquitectura {
+                padding: 5rem;
 
-    .button__sections__lugares a {
-        font-size: map-get($fuentes, 20px);
-        @include espacios (150px, 30px);
-        @include margenes (none, none, 10px, none, none);
-    }
+                p {
+                    font-size: 2rem;
+                    padding: 5rem;
+                }
 
+                a {
+                    padding: 0.05rem;
+                    @include espacios (13rem, 3rem);
+                    @include margenes (-5rem, none, 3rem, none, none);
+                }
+            }
 
-    .button__sections__arquitectura {
-        background-size: 860px 350px;
-        text-align: $posicion;
-        color: $color-principal;
-        @include margenes (0px, none, none, none, 130px);
-    }
+            &__acrobacias {
+                padding: 5rem;
 
-    .button__sections__arquitectura p {
-        font-size: map-get($fuentes, 30px);
-        text-align: $posicion;
-    }
+                p {
+                    font-size: 2rem;
+                    padding: 5rem;
+                }
 
+                a {
+                    padding: 0.05rem;
+                    @include espacios (13rem, 3rem);
+                    @include margenes (-5rem, none, 3rem, none, none);
+                }
+            }
 
-    .button__sections__arquitectura a {
-        font-size: map-get($fuentes, 20px);
-        @include espacios (150px, 30px);
-        @include margenes (none, none, 10px, none, none);
-    }
+            &__animales {
+                padding: 5rem;
 
+                p {
+                    font-size: 2rem;
+                    padding: 5rem;
+                }
 
-    .button__sections__acrobacias {
-        background-size: 860px 350px;
-        text-align: $posicion;
-        color: $color-principal;
-        @include margenes (0px, none, none, none, 130px);
-    }
-
-    .button__sections__acrobacias p {
-        font-size: map-get($fuentes, 30px);
-        text-align: $posicion;
-    }
-
-
-    .button__sections__acrobacias a {
-        font-size: map-get($fuentes, 20px);
-        @include espacios (150px, 30px);
-        @include margenes (none, none, 10px, none, none);
-    }
-
-    .button__sections__animales {
-        background-size: 860px 350px;
-        text-align: $posicion;
-        color: $color-principal;
-        @include espacios (none, 100%);
-        @include margenes (0px, none, none, none, 130px);
-    }
-
-    .button__sections__animales p {
-        font-size: map-get($fuentes, 30px);
-        text-align: $posicion;
-    }
-
-
-    .button__sections__animales a {
-        font-size: map-get($fuentes, 20px);
-        @include espacios (150px, 30px);
-        @include margenes (none, none, 10px, none, none);
+                a {
+                    padding: 0.05rem;
+                    @include espacios (13rem, 3rem);
+                    @include margenes (-5rem, none, 3rem, none, none);
+                }
+            }
+        }
     }
 
     /*galeria*/
     .button__gallery {
-        max-width: 350px;
-        @include espacios (none, 100%);
-        @include margenes (10px, none, 20px, none, none);
-    }
+        @include espacios (350px, 100%);
+        @include margenes (10px, none, 220px, none, none);
 
-    .button__gallery a {
-        font-size: map-get($fuentes, 20px);
-        @include espacios (300px, 50px);
+        a {
+            font-size: map-get($fuentes, 2rem);
+            @include espacios (20rem, 3rem);
+            margin-left: -11rem;
+        }
     }
 
     .gallery-container-two {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 200px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 15rem;
+        padding: 4rem;
+        grid-gap: 20px;
         max-width: 100%;
-        @include margenes (none, none, 5px, none, 0.5px);
+        height: 100%;
+        @include margenes (none, none, none, none, 10px);
+    }
+
+    .gallery {
+        &__img {
+            &__two {
+                @include espacios (100%, 100%);
+                object-fit: cover;
+
+                &:hover {
+                    transform: scale(0.9);
+                }
+
+                &:nth-child(1) {
+                    @include grilla-galeria;
+                }
+
+                &:nth-child(4) {
+                    @include grilla-galeria;
+                }
+
+                &:nth-child(5) {
+                    @include grilla-galeria;
+                }
+            }
+        }
     }
 
     .carousel-inner {
-        @include margenes (none, none, none, 20px, 15px);
+        @include margenes (none, none, none, 0, 0.05rem);
     }
 
     /*blog*/
-    .bar-container h2 {
-        font-size: map-get($fuentes, 30px);
-        @include margenes (15px, none, none, none, none);
+    .bar-container {
+        h2 {
+            font-size: 1.2rem;
+            @include margenes (1.5rem, none, none, none, none);
+        }
     }
 
     .bar-principal {
         flex-direction: $direccion-principal;
-    }
 
-    .bar-principal select {
-        font-size: map-get($fuentes, 20px);
-        @include margenes (15px, none, -3px, none, none);
-    }
+        select {
+            font-size: 1rem;
+            margin-left: 1.5rem;
+        }
 
-    .bar-principal form {
-        @include margenes (5px, none, 0px, none, none);
-    }
+        form {
+            font-size: 1rem;
+            margin-left: 1.6rem;
 
-    .bar-principal form p input {
-        @include espacios (385px, none);
-        @include margenes (5px, none, 5px, none, none);
+            p {
+                input {
+                    @include margenes (0.5rem, none, 7rem, none, none);
+                    margin-left: 1.6rem;
+                    @include espacios (20rem, none);
+                }
+            }
+        }
     }
 
     .card {
-        @include espacios (350px, 650px);
-        @include margenes (15px, 15px, 15px, 15px, none);
+        @include margenes (15px, 15px, 15px, 15px, 15px);
+        @include espacios (20rem, 50rem);
     }
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
-
     }
 
-    .card-body p {
-        font-size: map-get($fuentes, 20px);
+    .card-body {
+        p {
+            font-size: map-get($fuentes, 2rem);
+        }
     }
 
     .card img {
-        @include espacios (350px, 200px);
+        @include espacios (18rem, 12.5rem);
     }
 
     /*contacto*/
     .contacto-container {
-        @include margenes (none, none, 0px, none, none);
-    }
+        @include espacios (100%, 100%);
+        @include margenes (none, none, -40rem, none, 0.5rem);
 
-    .contacto-container .subtitulo {
-        font-size: map-get($fuentes, 30px);
+        .subtitulo {
+            font-size: 1.5rem;
+            width: 30rem;
+            margin-left: 41.5rem;
+        }
     }
 
     .form-container {
-        @include espacios (370px, none);
-        @include margenes (none, none, none, 0.5px, none);
-    }
+        @include espacios (21rem, none);
+        @include margenes (none, none, 41.5rem, none, none);
 
-    .form-case {
-        font-size: map-get($fuentes, 20px);
+        .form-case {
+            @include espacios (18rem, none);
+
+            .btn {
+                @include espacios (18rem, none);
+            }
+        }
     }
 
     .write {
-        @include espacios (370px, none);
+        @include espacios (21rem, auto);
+        @include margenes (none, none, 41.5rem, none, none);
+
+
+        iframe {
+            @include espacios (15rem, none);
+        }
     }
 
-    .write p {
-        font-size: map-get($fuentes, 20px);
+    .subtitulo {
+        h2 {
+            font-size: 1.5rem;
+            width: 30rem;
+            margin-left: 41.5rem;
+        }
     }
 
-
-    .write iframe {
-        @include espacios (300px, 200px);
-    }
-
-
-    .subtitulo h2 {
-        font-size: map-get($fuentes, 20px);
-    }
-
-    .col-lg-12 button {
-        font-size: map-get($fuentes, 20px);
-        @include espacios (100px, 50px);
-    }
-
-    .img-container .img img {
-        @include espacios (370px, 370px);
-        @include margenes (none, none,-15px, none, 5px);
+    .img-container {
+        .img {
+            img {
+                @include espacios (21rem, auto);
+                @include margenes (none, none, 0, none, none);
+                align-items: center;
+            }
+        }
     }
 
     /*footer gral - igual en todos las secciones*/
     footer {
-        background-color: $fondo-mq-telefono;
-        font-size: 150px;
+        background-image: linear-gradient(to top, rgb(121, 170, 181), rgb(202, 223, 227));
+        background-color: $fondo-mq-tablet;
+        font-size: 200px;
         @include margenes (8px, none, none, none, none);
     }
 
-    .network-links p {
-        font-size: map-get($fuentes, 30px);
+    .network-links {
+        p {
+            font-size: map-get($fuentes, 4rem);
+            margin-top: 50px;
+        }
+
+        a {
+            i {
+                font-size: map-get($fuentes, 3rem);
+            }
+        }
     }
 
-    .network-links a i {
-        font-size: map-get($fuentes, 30px);
-    }
-
-    .fa-brands .fa-linkedin-in {
-        justify-content: $posicion;
-
+    .fa-brands {
+        .fa-linkedin-in {
+            justify-content: $posicion;
+        }
     }
 
     .navigation-end {
-        margin-top: 15px;
-        font-size: map-get($fuentes, 20px);
         @include margenes (15px, none, none, none, none);
+        font-size: map-get($fuentes, 3rem);
+
+        img {
+            background-color: none;
+            @include espacios (200px, none);
+            @include margenes (25px, none, none, none, none);
+        }
+
+        li {
+            @include margenes (20px, none, none, none, none);
+
+            a {
+                font-size: map-get($fuentes, 3rem);
+            }
+        }
     }
 
-    .navigation-end img {
-        background-color: $fondo-mq-telefono;
-        @include espacios (150px, none);
-        @include margenes (25px, none, none, none, none);
-    }
-
-    .navigation-end li {
-        @include margenes (30px, none, none, none, none);
-    }
-
-    .navigation-end li a {
-        font-size: map-get($fuentes, 20px);
-    }
-
-    .copyright p {
-        display: flex;
-        color: $color-principal;
-        font-size: map-get($fuentes, 20px);
+    .copyright {
+        p {
+            display: flex;
+            color: $color-principal;
+            @include margenes (50px, none, none, none, none);
+            font-size: map-get($fuentes, 3rem);
+        }
     }
 }
