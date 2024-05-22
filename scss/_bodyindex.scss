@@ -28,7 +28,7 @@ main {
 }
 
 .presentacion {
-    @include espacios (150rem, 60rem);
+    @include espacios (72rem, 40rem);
     @include presentacion;
     background-color: $color-fondo;
     .img {
@@ -37,8 +37,8 @@ main {
         img {
             vertical-align: top;
             border-radius: 5px;
-            @include espacios (70rem, 40rem);
-            @include margenes (1.5rem, 1.5rem, 2rem, 1.5rem, 1.5rem);
+            @include espacios (33rem, 23rem);
+            @include margenes (5.5rem, 1.5rem, 2rem, 1.5rem, 0.5rem);
             border: $color-principal 2px solid;
         }
     }
@@ -54,18 +54,18 @@ main {
 .producto-texto {
     @include espacios (100%, none);
     h1 {
-        @include margenes (0.5rem, none, 3rem, none, 1.5rem);
-        font-size: 60px;
+        @include margenes (0.5rem, none, 0.5rem, none, 1.5rem);
+        font-size: 2.5rem;
         color: $color-principal;
     }
     p {
-        font-size: 35px;
+        font-size: 1.25rem;
         font-family: $cuerpo;
         color: $color-principal;
         letter-spacing: 1.5px;
         @include espacios (none, 125px);
         text-align: justify;
-        @include margenes (15px, none, 38px, none, none);
+        @include margenes (0.5rem, none, 1rem, none, none);
     }
 }
 
@@ -78,7 +78,7 @@ main {
     @include espacios (none, 200px);
     display: flex;
     justify-content: $posicion;
-    @include margenes (30rem, none, 15rem, none, none);
+    @include margenes (18rem, none, 15rem, none, none);
     text-align: $posicion;
     a {
         @include formato;
@@ -117,7 +117,7 @@ button {
 
 .gallery-container {
     @include formato-grid;
-    margin-left: 20px;
+    grid-template-rows: 40rem;
 }
 
 .gallery__img {
@@ -228,7 +228,7 @@ button {
     display: flex;
     flex-direction: $direccion-secundaria;
     @include espacios (300px, none);
-    @include margenes (none, none, 35px, 25px, none);
+    @include margenes (none, none, 5px, 5px, none);
     clear: both;
     .service-one {
         @include decorative-img; 

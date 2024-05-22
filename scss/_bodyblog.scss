@@ -26,22 +26,21 @@
     flex-direction: $direccion-secundaria;
     align-items: $posicion;
     select {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         display: flex;
         flex-direction: $direccion-secundaria;
-        @include margenes (none, none, 70px, none, none);
+        @include margenes (none, none, 0.5rem, none, none);
     }
     form {
         display: flex;
         flex-direction: $direccion-secundaria;
-        @include margenes (none, none, 70rem, none, none);
+        @include margenes (none, none, 31.5rem, none, none);
     }    
 }
 
-/*botones*/
 .card {
-    @include margenes (35px, 35px, 35px, 35px, none);
-    @include espacios (22rem, none);
+    @include margenes (2.5rem, 2.5rem, 0.05rem, 0.05rem, none);
+    @include espacios (17.5rem, none);
 }
 
 .card-container {
@@ -49,17 +48,23 @@
     grid-template-columns: repeat(4, 1fr);
     align-content: $posicion;
     justify-items: $posicion;
+    grid-auto-rows: auto;
+    padding: 0.5rem;
+    grid-gap: 20px;
+
 }
 
 .card {
     img{
-        @include espacios (22rem, 18rem);
+        @include espacios (17.5rem, 13rem);
+        padding: 0.25rem;
     }    
 }
 
 .card-body {
     p {
         text-align: justify;
+        font-size: 1.25rem;
     }
 }
 
@@ -83,19 +88,11 @@
     }
 }
 
-.buscador {
-    
-    i {
-        list-style: $decoracion;
-        color: $color-principal;
-    }
-}
-
 .articles {
     p {
         font-family: $cuerpo;
         color: $color-principal;
         font-style: italic;
-        font-size: map-get($fuentes, 20px);
+        font-size: map-get($fuentes, 2rem);
     }
 }

@@ -6,7 +6,7 @@
     border-radius: 10px;
     display: flex;
     flex-direction: $direccion-principal;
-    @include margenes (none, none, 75rem, none, 0);
+    @include margenes (none, none, 72rem, none, 0);
     @include espacios (80rem, none);
     h2 {
         font-size: 2rem;
@@ -16,8 +16,8 @@
         color: $color-principal;
         font-style: italic;
         display: inline-block;
-        @include margenes (none, none, -20rem, none, none);
-        font-size: map-get($fuentes, 20px);
+        @include margenes (none, none, -40rem, none, none);
+        font-size: map-get($fuentes, 2rem);
     }
     .form {
         border-radius: 10px;

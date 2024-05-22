@@ -396,44 +396,52 @@
     /*contacto*/
     .contacto-container {
         @include espacios (100%, 100%);
-        @include margenes (none, none, -4rem, none, 0.5rem);
+        @include margenes (none, none, -40rem, none, 0.5rem);
 
         .subtitulo {
             font-size: 2rem;
-            width: 30rem;
+            margin-left: 61.5rem;
+            width: 20rem;
+            
         }
     }
 
     .form-container {
-        @include espacios (40rem, none);
-        @include margenes (none, none, none, -40rem, none);
+        @include espacios (24rem, none);
+        @include margenes (none, none, 61.5rem, none, none);
+
+        .form-case {
+            @include espacios (24rem, none);
+
+            .btn {
+                @include espacios (18rem, none);
+            }
+        }
     }
 
     .write {
-        @include espacios (40rem, none);
+        @include espacios (24rem, auto);
+        @include margenes (none, none, 61.5rem, none, none);
+
 
         iframe {
-            @include espacios (40rem, none);
+            @include espacios (20rem, none);
         }
     }
 
     .subtitulo {
         h2 {
             font-size: 2rem;
-        
+            margin-left: 61.5rem;
+            width: 7rem;
         }
-    }
-
-    .col-lg-12 button {
-        font-size: map-get($fuentes, 2rem);
-        @include espacios (80rem, 30rem);
     }
 
     .img-container {
         .img {
             img {
-                @include espacios (36rem, 20rem);
-                @include margenes (none, none, none, 1rem, none);
+                @include espacios (21rem, auto);
+                @include margenes (none, none, 0, none, none);
                 align-items: center;
             }
         }

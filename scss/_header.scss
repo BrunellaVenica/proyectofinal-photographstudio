@@ -10,13 +10,14 @@ header {
     justify-content: space-between;
     font-size: map-get($fuentes, 4rem);
     @include margenes (none, 5px, none, none, 10px);
+
     img {
         display: flex;
         color: $color-principal;
-        width: 300px;
-        height: 50px;
-        margin-top: 15px;
+        @include espacios (25rem, 3rem);
+        @include margenes (0.5rem, none, 2rem, none, none);
     }
+
     .nav-bar {
         display: flex;
         list-style: $decoracion;
@@ -27,7 +28,8 @@ header {
         align-items: flex-end;
         flex-wrap: wrap;
         width: 100%;
-        li { 
+
+        li {
             a {
                 justify-content: space-between;
                 color: $color-principal;
@@ -39,6 +41,7 @@ header {
                 justify-content: end;
                 @include margenes (5px, none, 15px, 25px, 10px);
                 border-radius: 30px;
+
                 &:hover {
                     background-color: $color-secundario;
                     color: $color-hover;
@@ -61,12 +64,15 @@ header {
     background-image: url(../images/background-image2.png);
     background-size: cover;
     background-position: $posicion;
+
     img {
         @include espacios (250px, none);
     }
+
     a {
         color: $color-principal;
         text-decoration: $decoracion;
+
         i {
             color: $color-principal;
             text-decoration: $decoracion;

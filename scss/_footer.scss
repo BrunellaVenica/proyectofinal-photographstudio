@@ -18,7 +18,7 @@ footer {
         text-decoration: $decoracion;
         list-style: $decoracion;
         align-items: $posicion;
-        font-size: map-get($fuentes, 5rem);
+        font-size: 1.5rem;
         @include margenes (120px, none, none, none, none);
     }
 
@@ -33,7 +33,6 @@ footer {
         i {
             display: flex;
             float: left;
-            font-size: map-get($fuentes, 6rem);
             justify-content: $posicion;
             align-items: $posicion;
             align-content: $posicion;
@@ -57,7 +56,6 @@ footer {
     display: flex;
     flex-direction: $direccion-principal;
     @include margenes (20px, none, none, none, none);
-    font-size: map-get($fuentes, 6rem);
 
     img {
         background-color: none;
@@ -66,18 +64,18 @@ footer {
         flex-direction: $direccion-principal;
         align-items: $posicion;
         @include margenes (30px, none, none, none, none);
-        @include espacios (300px, none);
+        @include espacios (15rem, none);
     }
 
     ul {
         li {
             list-style: $decoracion;
-            @include margenes (20px, none, none, none, none);
+            @include margenes (3rem, none, none, none, none);
 
             a {
                 color: $color-principal;
                 text-decoration: $decoracion;
-                font-size: map-get($fuentes, 5rem);
+                font-size: 2rem;
 
                 &:hover {
                     background-color: none;
@@ -93,6 +91,6 @@ footer {
         display: flex;
         color: $color-principal;
         @include margenes (160px, none, none, none, none);
-        font-size: map-get($fuentes, 5rem);
+        font-size: 1.5rem;
     }
 }
