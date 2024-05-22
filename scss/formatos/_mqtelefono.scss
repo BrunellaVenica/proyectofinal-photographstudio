@@ -222,6 +222,7 @@
         &__sections {
             &__lugares {
                 padding: 5rem;
+
                 p {
                     font-size: 2rem;
                     padding: 5rem;
@@ -363,35 +364,35 @@
         }
     }
 
-    .card {
-        @include margenes (15px, 15px, 15px, 15px, 15px);
-        @include espacios (20rem, 50rem);
-    }
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
-    }
 
-    .card-body {
-        p {
-            font-size: map-get($fuentes, 2rem);
+        .card {
+            @include margenes (1.5rem, 1.5rem, none, none, 1rem);
+            @include espacios (22rem, auto);
+
+            img {
+                @include espacios (20rem, 14rem);
+            }
+
+            .card-body {
+                p {
+                    font-size: map-get($fuentes, 2rem);
+                }
+            }
         }
-    }
 
-    .card img {
-        @include espacios (18rem, 12.5rem);
     }
 
     /*contacto*/
     .contacto-container {
         @include espacios (100%, 100%);
         @include margenes (none, none, -40rem, none, 0.5rem);
-
         .subtitulo {
             font-size: 1.5rem;
-            margin-left: 0.5rem;
-            width: 7rem;
-            
+            margin-left: 42rem;
+            width: 15rem;
         }
     }
 
@@ -411,8 +412,6 @@
     .write {
         @include espacios (21rem, auto);
         @include margenes (none, none, 41.5rem, none, none);
-
-
         iframe {
             @include espacios (15rem, none);
         }
@@ -421,8 +420,8 @@
     .subtitulo {
         h2 {
             font-size: 1.5rem;
-            margin-left: 0.5rem;
-            width: 7rem;
+            margin-left: 42rem;
+            width: 15rem;
         }
     }
 

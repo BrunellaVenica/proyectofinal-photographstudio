@@ -358,26 +358,22 @@ button:hover {
   grid-gap: 20px;
   grid-template-rows: 40rem;
 }
-
-.gallery__img {
+.gallery-container .gallery__item:nth-child(1) {
+  grid-column-start: span 2;
+  grid-row-start: span 1;
+}
+.gallery-container .gallery__item:nth-child(4) {
+  grid-column-start: span 2;
+  grid-row-start: span 1;
+}
+.gallery-container .gallery__item:nth-child(5) {
+  grid-column-start: span 2;
+  grid-row-start: span 1;
+}
+.gallery-container .gallery__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.gallery__item:nth-child(1) {
-  grid-column-start: span 2;
-  grid-row-start: span 1;
-}
-
-.gallery__item:nth-child(4) {
-  grid-column-start: span 2;
-  grid-row-start: span 1;
-}
-
-.gallery__item:nth-child(5) {
-  grid-column-start: span 2;
-  grid-row-start: span 1;
 }
 
 .services-options-container {
@@ -879,7 +875,7 @@ button:hover {
   flex-direction: row;
   margin-top: none;
   margin-bottom: none;
-  margin-left: 31.5rem;
+  margin-left: 30rem;
   margin-right: none;
   padding: none;
 }
@@ -998,7 +994,12 @@ button:hover {
   height: none;
 }
 
-.write {
+.form-label1,
+.form-label2 {
+  align-items: end;
+}
+
+.write-container .write {
   display: flex;
   flex-direction: column;
   clear: both;
@@ -1012,20 +1013,14 @@ button:hover {
   width: 50%;
   height: none;
 }
-.write iframe {
+.write-container .write iframe {
   width: 37rem;
   height: 40rem;
 }
-.write p {
+.write-container .write p {
   font-family: "Petrona", serif;
   color: #f5fffa;
 }
-
-.form-label1,
-.form-label2 {
-  align-items: end;
-}
-
 .write-container .subtitulo h2 {
   font-family: "Petrona", serif;
   font-style: italic;
@@ -1583,34 +1578,42 @@ footer {
   .bar-principal form {
     margin-top: 0.5rem;
     margin-bottom: none;
-    margin-left: 7rem;
+    margin-left: 6rem;
     margin-right: none;
     padding: none;
   }
   .bar-principal form p input {
     margin-top: 0.5rem;
     margin-bottom: none;
-    margin-left: 7rem;
+    margin-left: 6rem;
     margin-right: none;
     padding: none;
     width: 400px;
     height: none;
   }
-  .card {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 15px;
-    width: 20rem;
-    height: 50rem;
-  }
   .card-container {
+    width: 20rem;
+    height: auto;
     grid-template-columns: repeat(2, 1fr);
   }
-  .card img {
-    width: 18rem;
+  .card-container .card {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    width: 21rem;
+    height: auto;
+  }
+  .card-container .card img {
+    width: 19rem;
     height: 12.5rem;
+  }
+  .card-container .card .card-body {
+    height: auto;
+  }
+  .card-container .card .card-body p {
+    font-size: 1.5rem;
   }
   /*contacto*/
   .contacto-container {
@@ -2116,21 +2119,21 @@ footer {
     width: 20rem;
     height: none;
   }
-  .card {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 15px;
-    width: 20rem;
-    height: 50rem;
-  }
   .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .card img {
-    width: 18rem;
-    height: 12.5rem;
+  .card-container .card {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: none;
+    margin-right: none;
+    padding: 1rem;
+    width: 22rem;
+    height: auto;
+  }
+  .card-container .card img {
+    width: 20rem;
+    height: 14rem;
   }
   /*contacto*/
   .contacto-container {
@@ -2144,8 +2147,8 @@ footer {
   }
   .contacto-container .subtitulo {
     font-size: 1.5rem;
-    margin-left: 0.5rem;
-    width: 7rem;
+    margin-left: 42rem;
+    width: 15rem;
   }
   .form-container {
     width: 21rem;
@@ -2179,8 +2182,8 @@ footer {
   }
   .subtitulo h2 {
     font-size: 1.5rem;
-    margin-left: 0.5rem;
-    width: 7rem;
+    margin-left: 42rem;
+    width: 15rem;
   }
   .img-container .img img {
     width: 21rem;

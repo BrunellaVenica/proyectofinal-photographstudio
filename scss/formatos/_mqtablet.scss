@@ -363,35 +363,35 @@
         }
 
         form {
-            @include margenes (0.5rem, none, 7rem, none, none);
+            @include margenes (0.5rem, none, 6rem, none, none);
 
             p {
                 input {
-                    @include margenes (0.5rem, none, 7rem, none, none);
+                    @include margenes (0.5rem, none, 6rem, none, none);
                     @include espacios (400px, none);
                 }
             }
         }
     }
 
-    .card {
-        @include margenes (15px, 15px, 15px, 15px, 15px);
-        @include espacios (20rem, 50rem);
-    }
-
     .card-container {
+        @include espacios (20rem, auto);
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card-body {
-        p {
-            font-size: map-get($fuentes, 2rem);
+        .card {
+            @include margenes (1.5rem, 1.5rem, 1rem, 1rem, 1rem);
+            @include espacios (21rem, auto);
+            img {
+                @include espacios (19rem, 12.5rem);
+            }
+            .card-body {
+                height: auto;
+                p {
+                    font-size: 1.5rem;
+                }
+            }
         }
     }
 
-    .card img {
-        @include espacios (18rem, 12.5rem);
-    }
 
     /*contacto*/
     .contacto-container {

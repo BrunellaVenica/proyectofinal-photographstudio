@@ -36,29 +36,29 @@
     @include espacios (50%, none);
 }
 
-.write {
-    display: flex;
-    flex-direction: $direccion-principal;
-    clear: both;
-    float: left;
-    border: $color-principal 2px solid;
-    @include margenes (1.5rem, 1.5rem, -40rem, 1.5rem, 1.5rem);
-    @include espacios (50%, none);
-    iframe {
-        @include espacios (37rem, 40rem);
-    }
-    p {
-        font-family: $cuerpo;
-        color: $color-principal;
-    }
-}
-
 .form-label1,
 .form-label2 {
     align-items: end;
 }
 
 .write-container {
+    .write {
+        display: flex;
+        flex-direction: $direccion-principal;
+        clear: both;
+        float: left;
+        border: $color-principal 2px solid;
+        @include margenes (1.5rem, 1.5rem, -40rem, 1.5rem, 1.5rem);
+        @include espacios (50%, none);
+        iframe {
+            @include espacios (37rem, 40rem);
+        }
+        p {
+            font-family: $cuerpo;
+            color: $color-principal;
+        }
+    }
+    
     .subtitulo {
         h2 {
             font-family: $cuerpo;

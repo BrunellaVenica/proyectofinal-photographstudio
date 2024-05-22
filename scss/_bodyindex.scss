@@ -118,24 +118,26 @@ button {
 .gallery-container {
     @include formato-grid;
     grid-template-rows: 40rem;
+    .gallery {
+        &__item {
+            &:nth-child(1) {
+                @include grilla-galeria;
+            }
+            &:nth-child(4) {
+                @include grilla-galeria;
+            }    
+            &:nth-child(5) {
+                @include grilla-galeria;
+            }      
+        }
+        &__img {
+            @include espacios (100%, 100%);
+            object-fit: cover;
+        }
+    }
 }
 
-.gallery__img {
-    @include espacios (100%, 100%);
-    object-fit: cover;
-}
 
-.gallery__item:nth-child(1) {
-    @include grilla-galeria;
-}
-
-.gallery__item:nth-child(4) {
-    @include grilla-galeria;
-}
-
-.gallery__item:nth-child(5) {
-    @include grilla-galeria;
-}
 
 .services-options-container {
     align-content: $posicion;

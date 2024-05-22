@@ -34,7 +34,7 @@
     form {
         display: flex;
         flex-direction: $direccion-secundaria;
-        @include margenes (none, none, 31.5rem, none, none);
+        @include margenes (none, none, 30rem, none, none);
     }    
 }
 
