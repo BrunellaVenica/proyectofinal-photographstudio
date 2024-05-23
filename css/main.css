@@ -2157,7 +2157,7 @@ footer {
     margin-bottom: none;
     margin-left: 41.5rem;
     margin-right: none;
-    padding: none;
+    padding: 0.5rem;
   }
   .form-container .form-case {
     width: 18rem;
@@ -2174,7 +2174,7 @@ footer {
     margin-bottom: none;
     margin-left: 41.5rem;
     margin-right: none;
-    padding: none;
+    padding: 0.5rem;
   }
   .write iframe {
     width: 15rem;

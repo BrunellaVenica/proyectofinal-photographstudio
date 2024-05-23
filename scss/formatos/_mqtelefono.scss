@@ -398,7 +398,7 @@
 
     .form-container {
         @include espacios (21rem, none);
-        @include margenes (none, none, 41.5rem, none, none);
+        @include margenes (none, none, 41.5rem, none, 0.5rem);
 
         .form-case {
             @include espacios (18rem, none);
@@ -411,7 +411,7 @@
 
     .write {
         @include espacios (21rem, auto);
-        @include margenes (none, none, 41.5rem, none, none);
+        @include margenes (none, none, 41.5rem, none, 0.5rem);
         iframe {
             @include espacios (15rem, none);
         }
