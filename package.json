@@ -4,9 +4,9 @@
   "description": "Consta de una representacion grafica e informativa de los trabajos realizados a lo largo de los años en diferentes escenarios.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-css": "sass --watch scss/main.scss css/main.css"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "watch-css": "sass --watch scss/main.scss css/main.css"
 }
