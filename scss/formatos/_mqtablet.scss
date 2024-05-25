@@ -129,14 +129,15 @@
 
     .gallery-container {
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 25rem;
+        grid-auto-rows: 22rem;
         grid-gap: 1rem;
-        @include margenes (none, none, 0rem, none, 1.5rem);
+        @include margenes (none, 5rem, 0rem, none, 1.5rem);
     }
 
     .gallery__img {
         object-fit: cover;
-        @include espacios (100%, 100%);
+        @include margenes (0.5rem, none, 0rem, none, none);
+        @include espacios (100%, 80%);
     }
 
     .gallery__item:nth-child(1) {
@@ -147,11 +148,19 @@
     .gallery__item:nth-child(4) {
         grid-column-start: span 2;
         grid-row-start: span 1;
+        margin-top: 8rem;
     }
 
     .gallery__item:nth-child(5) {
         grid-column-start: span 1;
         grid-row-start: span 1;
+        margin-top: 16rem;
+    }
+
+    .gallery__item:nth-child(6) {
+        grid-column-start: span 2;
+        grid-row-start: span 1;
+        margin-top: 24rem;
     }
 
     .services-options-container {
@@ -160,6 +169,7 @@
             width: 200px;
             font-size: map-get($fuentes, 3rem);
             @include espacios (200px, 30px);
+            margin-top: 27rem;
         }
     }
 
@@ -325,15 +335,19 @@
             &__two {
                 @include espacios (100%, 100%);
                 object-fit: cover;
+
                 &:hover {
                     transform: scale(0.9);
                 }
+
                 &:nth-child(1) {
                     @include grilla-galeria;
                 }
+
                 &:nth-child(4) {
                     @include grilla-galeria;
                 }
+
                 &:nth-child(5) {
                     @include grilla-galeria;
                 }
@@ -377,14 +391,18 @@
     .card-container {
         @include espacios (20rem, auto);
         grid-template-columns: repeat(2, 1fr);
+
         .card {
             @include margenes (1.5rem, 1.5rem, 1rem, 1rem, 1rem);
             @include espacios (21rem, auto);
+
             img {
                 @include espacios (19rem, 12.5rem);
             }
+
             .card-body {
                 height: auto;
+
                 p {
                     font-size: 1.5rem;
                 }
@@ -402,7 +420,7 @@
             font-size: 2rem;
             margin-left: 61.5rem;
             width: 20rem;
-            
+
         }
     }
 

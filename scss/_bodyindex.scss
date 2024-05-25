@@ -117,7 +117,7 @@ button {
 
 .gallery-container {
     @include formato-grid;
-    grid-template-rows: 40rem;
+    grid-template-rows: 30rem;
     .gallery {
         &__item {
             &:nth-child(1) {
@@ -131,8 +131,9 @@ button {
             }      
         }
         &__img {
-            @include espacios (100%, 100%);
+            @include espacios (100%, 80%);
             object-fit: cover;
+            height: 30rem;
         }
     }
 }

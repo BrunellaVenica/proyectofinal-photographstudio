@@ -8,9 +8,11 @@
     flex-direction: $direccion-principal;
     @include margenes (none, none, 72rem, none, 0);
     @include espacios (80rem, none);
+
     h2 {
         font-size: 2rem;
     }
+
     .subtitulo {
         font-family: $cuerpo;
         color: $color-principal;
@@ -19,6 +21,7 @@
         @include margenes (none, none, -40rem, none, none);
         font-size: map-get($fuentes, 2rem);
     }
+
     .form {
         border-radius: 10px;
     }
@@ -41,24 +44,24 @@
     align-items: end;
 }
 
-.write-container {
-    .write {
-        display: flex;
-        flex-direction: $direccion-principal;
-        clear: both;
-        float: left;
-        border: $color-principal 2px solid;
-        @include margenes (1.5rem, 1.5rem, -40rem, 1.5rem, 1.5rem);
-        @include espacios (50%, none);
-        iframe {
-            @include espacios (37rem, 40rem);
-        }
-        p {
-            font-family: $cuerpo;
-            color: $color-principal;
-        }
+.write {
+    display: flex;
+    flex-direction: $direccion-principal;
+    clear: both;
+    float: left;
+    border: $color-principal 2px solid;
+    @include margenes (1.5rem, 1.5rem, -40rem, 1.5rem, 1.5rem);
+    @include espacios (50%, none);
+
+    iframe {
+        @include espacios (37rem, 40rem);
     }
-    
+
+    p {
+        font-family: $cuerpo;
+        color: $color-principal;
+    }
+
     .subtitulo {
         h2 {
             font-family: $cuerpo;
@@ -67,7 +70,7 @@
             @include margenes (none, 0.5px, 10px, none, none);
             font-size: 2rem;
         }
-    }    
+    }
 }
 
 .img-container {
@@ -76,8 +79,10 @@
     clear: both;
     @include margenes (none, none, 35px, 25px, none);
     @include espacios (50%, none);
+
     .img {
         margin-bottom: 50px;
+
         img {
             float: left;
             border: $color-principal 2px solid;
