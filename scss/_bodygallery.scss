@@ -6,50 +6,58 @@
         justify-content: $posicion;
         @include margenes (10px, none, 150px, none, none);
         max-width: 2950px;
+
         a {
-            @include formato; 
+            @include formato;
             font-family: $cuerpo;
             text-align: $posicion;
             text-decoration: $decoracion;
-            background-color:$color-principal;
+            background-color: $color-principal;
             border: 2px solid $color-principal;
             align-content: $posicion;
-            color:$btn-hover;
+            color: $btn-hover;
             max-width: 2950px;
             transition: 1s;
+
             &:hover {
                 @include animacion-img;
             }
         }
     }
-    
+
 
 }
 
-.gallery-container-two{
+.gallery-container-two {
     @include formato-grid;
-}
+    grid-template-rows: 30rem;
 
-.gallery {
-    &__img {
-        &__two{
-            @include espacios (100%, 100%);
-            object-fit: cover;
-            &:hover{
-                transform: scale(1.1);
-            }
-            &:nth-child(1) {
-                @include grilla-galeria;
-            }
-            &:nth-child(4) {
-                @include grilla-galeria;
-            }
-            
-            &:nth-child(5) {
-                @include grilla-galeria;
+    .gallery {
+        &__img {
+            &__two {
+                @include espacios (100%, 100%);
+                object-fit: cover;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                &:nth-child(1) {
+                    @include grilla-galeria;
+                }
+
+                &:nth-child(4) {
+                    @include grilla-galeria;
+                }
+
+                &:nth-child(5) {
+                    @include grilla-galeria;
+                }
             }
         }
     }
+
+
 }
 
 .carousel-container_slide {
