@@ -425,7 +425,7 @@ button:hover {
 .services-options h5 {
   display: flex;
   flex-direction: column;
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Petrona", serif;
   letter-spacing: 3.5px;
   text-align: center;
@@ -526,32 +526,32 @@ button:hover {
 }
 .decorative-picture .service-one {
   float: left;
-  width: 19rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   padding: 5px;
   margin: 8px;
   border: #f5fffa 2px solid;
 }
 .decorative-picture .service-two {
   float: left;
-  width: 19rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   padding: 5px;
   margin: 8px;
   border: #f5fffa 2px solid;
 }
 .decorative-picture .service-three {
   float: left;
-  width: 19rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   padding: 5px;
   margin: 8px;
   border: #f5fffa 2px solid;
 }
 .decorative-picture .service-four {
   float: left;
-  width: 19rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   padding: 5px;
   margin: 8px;
   border: #f5fffa 2px solid;
@@ -762,16 +762,16 @@ button:hover {
 
 /*galeria*/
 .button__gallery {
-  width: none;
-  height: 100%;
+  width: 30rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 0.5rem;
   margin-bottom: none;
-  margin-left: 150px;
+  margin-left: 25rem;
   margin-right: none;
   padding: none;
-  max-width: 2950px;
+  max-width: 100%;
 }
 .button__gallery a {
   border-radius: 60px;
@@ -790,8 +790,10 @@ button:hover {
   border: 2px solid #f5fffa;
   align-content: center;
   color: #787673;
-  max-width: 2950px;
+  max-width: 100%;
   transition: 1s;
+  width: 350px;
+  height: 50px;
 }
 .button__gallery a:hover {
   background: rgba(240, 240, 240, 0.9176470588);
@@ -830,7 +832,7 @@ button:hover {
 
 .carousel-container_slide {
   padding: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   transition-duration: 0.6s;
 }
 
