@@ -10,6 +10,7 @@ header {
     justify-content: space-between;
     font-size: map-get($fuentes, 4rem);
     @include margenes (none, 5px, none, none, 10px);
+    overflow: hidden;
 
     img {
         display: flex;
@@ -81,6 +82,7 @@ header {
         }
     }
 }
+
 
 h1 {
     display: flex;
