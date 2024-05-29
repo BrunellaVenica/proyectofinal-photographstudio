@@ -422,10 +422,13 @@ button:hover {
   padding: none;
 }
 
+.services-options {
+  text-align: center;
+}
 .services-options h5 {
   display: flex;
   flex-direction: column;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Petrona", serif;
   letter-spacing: 3.5px;
   text-align: center;
@@ -523,6 +526,7 @@ button:hover {
   margin-right: 5px;
   padding: none;
   clear: both;
+  text-align: center;
 }
 .decorative-picture .service-one {
   float: left;
@@ -600,7 +604,7 @@ button:hover {
   height: 3rem;
   margin-top: -20rem;
   margin-bottom: none;
-  margin-left: 20rem;
+  margin-left: 24rem;
   margin-right: none;
   padding: none;
 }
@@ -742,7 +746,7 @@ button:hover {
   height: 3rem;
   margin-top: -20rem;
   margin-bottom: none;
-  margin-left: 22rem;
+  margin-left: 24rem;
   margin-right: none;
   padding: none;
   font-family: "Petrona", serif;

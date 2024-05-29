@@ -173,10 +173,11 @@ button {
 }
 
 .services-options {
+    text-align: center;
     h5 {
         display: flex;
         flex-direction: $direccion-principal;
-        font-size: 40px;
+        font-size: 30px;
         font-family: $cuerpo;
         letter-spacing: 3.5px;
         text-align: $posicion;
@@ -233,6 +234,7 @@ button {
     @include espacios (300px, none);
     @include margenes (none, none, 5px, 5px, none);
     clear: both;
+    text-align: center;
     .service-one {
         @include decorative-img; 
     }
